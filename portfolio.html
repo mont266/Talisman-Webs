@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title>Gallery Single Item</title>
+        <title>Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,9 +15,10 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel='icon' href='img/favicon.ico' type='image/x-icon'/ >
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body><div id="top"></div>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -25,7 +26,7 @@
 <section id="header" class="bg-color0">
     <div class="container"><div class="row">
 
-      <a class="navbar-brand" href="./index.html"><img src="example/logo.png" alt=""></a>
+      <a class="navbar-brand" href="./index.html"><img src="img/logo.png" alt=""></a>
 
       <div class="col-sm-12 mainmenu_wrap"><div class="main-menu-icon visible-xs"><span></span><span></span><span></span></div>
         <ul id="mainmenu" class="nav menu sf-menu responsive-menu superfish">
@@ -36,38 +37,10 @@
             <a href="./index.html#portfolio">Portfolio</a>
           </li>
           <li class="">
-            <a href="./index.html#belowcontent">Blog</a>
-          </li>
-          <li class="">
             <a href="./index.html#info">Contact</a>
           </li>
-          
-          <li class="dropdown">
-            <a href="./about.html">Pages</a>
-            <ul class="nav dropdown-menu">
-              <li class="">
-                <a href="./about.html">About</a>
-              </li>
-              <li class="">
-                <a href="./gallery-single.html">Gallery Item</a>
-              </li>
-              <li class="">
-                <a href="./blog.html">Blog</a>
-              </li>
-              <li class="">
-                <a href="./blog-single.html">Blog Post</a>
-              </li>
-              <li class="">
-                <a href="./404.html">404</a>
-              </li>
-              <li class="">
-                <a href="./contact.html">Contact</a>
-              </li>
-              <li class="">
-                <a href="./shortcodes.html">Shortcodes</a>
-              </li>
-
-            </ul>
+          <li class="">
+            <a href="shop.html">Pricing</a>
           </li>
         </ul>
       </div>
@@ -148,16 +121,15 @@
     <div class="text-center filters">
       <ul id="filtrable">
         <li><a class="selected" data-filter="*" href="#">All</a></li>
-        <li><a data-filter=".graphicdesign" href="#" class="">Graphic Design</a></li>
-        <li><a data-filter=".photography" href="#" class="">Photography</a></li>
-        <li><a data-filter=".webdesign" href="#" class="">Web Design</a></li>
+        <li><a data-filter=".websites" href="#" class="">Websites</a></li>
+        <li><a data-filter=".apps" href="#" class="">Apps</a></li>
       </ul>
       <div class="clearfix"></div>
     </div>
       <!-- Items -->
       
       <ul class="items-row cols-3 portfolio filtrable clearfix isotope" id="portfolioContainer">
-        <li class="item isotope-item graphicdesign webdesign"> 
+        <li class="item isotope-item websites"> 
           
           <!-- Image  --> 
           
@@ -171,12 +143,12 @@
           </div>
           <div class="item_title">
             <h4>
-              <a href="./gallery-single.html">Stet clita gubergren</a>
+              <a href="./gallery-single.html">Example Website</a>
             </h4>
           </div>
         </li>
         
-        <li class="item isotope-item photography webdesign"> 
+        <li class="item isotope-item websites"> 
           
           <!-- Image  --> 
           
@@ -190,12 +162,12 @@
           </div>
           <div class="item_title">
             <h4>
-              <a href="./gallery-single.html">Stet clita gubergren</a>
+              <a href="./gallery-single.html">Example Website</a>
             </h4>
           </div>     
         </li>
         
-        <li class="item isotope-item photography webdesign"> 
+        <li class="item isotope-item websites"> 
           
           <!-- Image  --> 
           
@@ -209,12 +181,12 @@
           </div>
           <div class="item_title">
             <h4>
-              <a href="./gallery-single.html">Stet clita gubergren</a>
+              <a href="./gallery-single.html">Example Website</a>
             </h4>
           </div>
         </li>
         
-        <li class="item isotope-item"> 
+        <li class="item isotope-item apps"> 
           
           <!-- Image  --> 
           
@@ -228,12 +200,12 @@
           </div>
           <div class="item_title">
             <h4>
-              <a href="./gallery-single.html">Stet clita gubergren</a>
+              <a href="./gallery-single.html">Example App</a>
             </h4>
           </div>               
         </li>
         
-        <li class="item isotope-item graphicdesign webdesign"> 
+        <li class="item isotope-item apps"> 
           
           <!-- Image  --> 
           
@@ -247,12 +219,12 @@
           </div>
           <div class="item_title">
             <h4>
-              <a href="./gallery-single.html">Stet clita gubergren</a>
+              <a href="./gallery-single.html">Example App</a>
             </h4>
           </div>               
         </li>
         
-        <li class="item isotope-item"> 
+        <li class="item isotope-item apps"> 
           
           <!-- Image  --> 
           
@@ -266,12 +238,12 @@
           </div>
           <div class="item_title">
             <h4>
-              <a href="./gallery-single.html">Stet clita gubergren</a>
+              <a href="./gallery-single.html">Example App</a>
             </h4>
           </div>          
         </li>
         
-        <li class="item isotope-item photography webdesign"> 
+        <li class="item isotope-item websites"> 
           
           <!-- Image  --> 
           
@@ -285,12 +257,12 @@
           </div>
           <div class="item_title">
             <h4>
-              <a href="./gallery-single.html">Stet clita gubergren</a>
+              <a href="./gallery-single.html">Example Website</a>
             </h4>
           </div>               
         </li>
         
-        <li class="item isotope-item graphicdesign webdesign"> 
+        <li class="item isotope-item websites"> 
           
           <!-- Image  --> 
           
@@ -304,7 +276,7 @@
           </div>
           <div class="item_title">
             <h4>
-              <a href="./gallery-single.html">Stet clita gubergren</a>
+              <a href="./gallery-single.html">Example Website</a>
             </h4>
           </div>               
         </li>      
@@ -313,82 +285,44 @@
     </div> <!--eof portfolio_wrapper-->
       <div class="container">
             <div class="row">
-          <div class="col-sm-12"><p class="text-center loadmore"><a href="#" class="theme_btn inverse">Load More</a></p></div>  
         </div></div>
 </section>
 
-<footer id="footer" class="bg-color0">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-3 block widget_text">
-        <h3>Text Widget</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, dolorem, eaque fugit odit obcaecati temporibus est dolor consequatur totam nam facilis soluta maiores eius iste veritatis. Ratione quidem exercitationem quisquam.</p>
-      </div>
+<footer id="footer" class="dark_section">
+  <div class="container"><div class="row">
 
-
-    <div class="block col-sm-3">
-      <div class="block widget_news">
-        <h3>Popular Posts</h3>
-        <ul>
-            <li class="item">
-              <span class="news_introimg">
-                <a href="#">
-                  <img alt="" src="example/recent_post1.jpg">
-                </a>
-              </span>
-              <div class="news_right">
-                <h5> 
-                  <a href="#">At vero eos et accusam et justo duo dolores.</a>
-                </h5>
-                <span class="news-date">Dec 24, 2013</span>
-              </div>
-            </li>
-
-            <li class="item">
-              <span class="news_introimg">
-                <a href="#">
-                  <img alt="" src="example/recent_post2.jpg">
-                </a>
-              </span>
-              <div class="news_right">
-                <h5> 
-                  <a href="#">Sanctus sea sed takimata ut voluptua.</a>
-                </h5>
-                <span class="news-date">Dec 14, 2013</span>
-              </div>
-            </li>
-          </ul>
-      </div>
+    <div class="block widget_text col-sm-4">
+      <h3>Legal Stuff</h3>
+      <a href="termsofservice.html">Terms of Service</a><br>
+      <a href="privacypolicy.html">Privacy Policy</a>
     </div>
 
-
-    <div class="block col-sm-3 subscribe">
-      <h3>Newsletter Subscribe</h3>
-      <p>Please, subscribe to our latest news to be updated.</p>
-      <form id="signup" action="/" method="get" class="form-inline">
-        <div class="form-group">
-          <input name="email" id="mailchimp_email" type="email" class="form-control" placeholder="your@email.com">
-        </div>
-        <button type="submit" class="theme_btn">Send</button>
-        <div id="response"></div>
-      </form>
+    <div class="block col-sm-4 widget_recent_entries">    
+      <h3 class="widget-title">About Us</h3>   
+      <p>Talisman Webs<br>  
+        <span><strong>Email:</strong> </span>
+        <a href="mailto:talismanwebs@gmail.com">talismanwebs@gmail.com</a><br> 
+        We provide simple, modern, attractive and functional mobile app and web development.
+      </p> 
     </div>
 
-
-    <div class="block col-sm-3">
-      <h3>Flickr Widget</h3>
-      <ul id="flickr"></ul>
+    <div class="block col-sm-4 widget_search block">
+      <h3 class="vertical-margin-20">Follow Us</h3>
+      <p>
+        <a class="socialico-twitter-rounded" href="https://twitter.com/Talisman_Webs" title="Twitter">#</a>
+        <a class="socialico-facebook-rounded" href="https://www.facebook.com/TalismanWebs/" title="Facebook">#</a>
+        <!--<a class="socialico-google-rounded" href="#" title="Google">#</a>-->
+        <a class="socialico-linkedin-rounded" href="https://www.linkedin.com/company/talisman-webs" title="Linkedin">#</a>
+      </p>
     </div>
 
-
-    </div>
-  </div>
-</footer>  
+  </div></div>
+</footer>
 
 <section id="copyright" class="dark_section">
   <div class="container"><div class="row">
     
-    <div class="col-sm-12"><p class="text-center">&copy; Copyright 2014. Simpleflex Template by <a href="http://modernwebtemplates.com" target="_blank">MW Templates</a></p></div>
+    <div class="col-sm-12"><p class="text-center">&copy; Copyright 2020. <a href="http://www.talismanwebs.com">Talisman Webs</a></p></div>
 
   </div></div>
 </section>
