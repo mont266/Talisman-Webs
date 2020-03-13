@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet href="css/calc.css">
         <link rel='icon' href='img/favicon.ico' type='image/x-icon'/ >
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -66,7 +67,57 @@
     <div class="row">
       <div class="col-sm-12">
       </div>
-      <img src="img/prelaunch.png">
+      <div class="calc">
+      <form name="pricingcalc">
+        <p>
+          Website Quantity: <input type="text" name="txtWebsite">
+        </p>
+        <p>
+          How Many Pages?: <input type="text" name="txtPages">
+        </p>
+        <p>
+          Content Creation?: <input type="text" name="txtContent">
+        </p>
+        <p>
+          Blog?: <input type="text" name="txtBlog">
+        </p>
+        <p>
+          Analytics?: <input type="text" name="txtAnalytics">
+        </p>
+        <p>
+          Google Adsense?: <input type="text" name="txtAdsense">
+        </p>
+        <p>
+          Social Media Page Quantity: <input type="text" name="txtSocialMedia">
+        </p>
+        <p>
+          Web Hosting?: <input type="text" name="txtHost">
+        </p>
+        <p>
+          Booking System?: <input type="text" name="txtBooking">
+        </p>
+        <p>
+          Domain Registration?: <input type="text" name="txtDomain">
+        </p>
+        <p>
+          Talisman Webs Watermark?: <input type="text" name="txtCredit">
+        </p>
+        <p id="initResult">
+
+        </p>
+        <p id="resMonthly">
+
+        </p>
+        <p id="resYearly">
+          
+        </p>
+        <p id="deposit">
+
+        </p>
+
+        <input type="button" value="Calculate" onclick="calculator()"
+      </form>
+    </div>
     </div>
 
     <!--//COMING SOON! DO NOT TOUCH
@@ -187,6 +238,7 @@
         <script src='js/vendor/jquery.localscroll-min.js'></script>-->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/calculator.js"></script>
 
 
     </body>
