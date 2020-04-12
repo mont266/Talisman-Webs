@@ -12,7 +12,6 @@ function calculator() {
     var domainFee = 10.00;
     var creditDisc = 5.00;
 
-    var websiteQty;
     var pageQty;
     var contentQty;
     var blogQty;
@@ -24,7 +23,6 @@ function calculator() {
     var domainQty;
     var creditQty;
 
-    var websiteRes;
     var pageRes;
     var contentRes;
     var blogRes;
@@ -41,20 +39,50 @@ function calculator() {
     var resYearly;
     var deposit;
 
-    websiteQty = (document.pricingcalc.txtWebsite.value);
     pageQty = (document.pricingcalc.txtPages.value);
-    contentQty = (document.pricingcalc.txtContent.value);
-    blogQty = (document.pricingcalc.txtBlog.value);
-    analyticsQty = (document.pricingcalc.txtAnalytics.value);
-    adsenseQty = (document.pricingcalc.txtAdsense.value);
+    if (document.getElementById("contentCreation").value == "Yes") {
+        contentQty = 1;
+    } else {
+        contentQty = 0;
+    }
+    if (document.getElementById("blogSupport").value == "Yes") {
+        blogQty = 1;
+    } else {
+        blogQty = 0;
+    }
+    if (document.getElementById("analyticsSupport").value == "Yes") {
+        analyticsQty = 1;
+    } else {
+        analyticsQty = 0;
+    }
+    if (document.getElementById("adsenseSupport").value == "Yes") {
+        adsenseQty = 1;
+    } else {
+        adsenseQty = 0;
+    }
     socialMediaQty = (document.pricingcalc.txtSocialMedia.value);
-    hostQty = (document.pricingcalc.txtHost.value);
-    bookingQty = (document.pricingcalc.txtBooking.value);
-    domainQty = (document.pricingcalc.txtDomain.value);
-    creditQty = (document.pricingcalc.txtCredit.value);
+    if (document.getElementById("hostSupport").value == "Yes") {
+        hostQty = 1;
+    } else {
+        hostQty = 0;
+    }
+    if (document.getElementById("bookingSupport").value == "Yes") {
+        bookingQty = 1;
+    } else {
+        bookingQty = 0;
+    }
+    if (document.getElementById("domainSupport").value == "Yes") {
+        domainQty = 1;
+    } else {
+        domainQty = 0;
+    }
+    if (document.getElementById("creditSupport").value == "Yes") {
+        creditQty = 1;
+    } else {
+        creditQty = 0;
+    }
 
 
-    websiteRes = websiteCost * websiteQty;
     pageRes = (pageCost * pageQty) + (1.5 * pageQty);
     contentRes = contentCost * contentQty;
     blogRes = blogCost * blogQty;
@@ -68,7 +96,7 @@ function calculator() {
 
 
 
-    initRes = websiteRes + pageRes + contentRes + blogRes + analyticsRes + adsenseRes
+    initRes = pageRes + contentRes + blogRes + analyticsRes + adsenseRes
                 + socialMediaRes + hostRes + bookingRes + domainRes - creditRes;
     resMonthly = hostRes + bookingRes;
     resYearly = resMonthly * 12 - (resMonthly*12*0.15);
