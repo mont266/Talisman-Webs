@@ -10,6 +10,7 @@ function calculator() {
     var hostCost = 7.00;
     var bookingCost = 20.00;
     var domainFee = 10.00;
+    var liveChatcost = 5.00;
     var creditDisc = 5.00;
 
     var pageQty;
@@ -21,6 +22,7 @@ function calculator() {
     var hostQty;
     var bookingQty;
     var domainQty;
+    var livechatQty;
     var creditQty;
 
     var pageRes;
@@ -32,6 +34,7 @@ function calculator() {
     var hostRes;
     var bookingRes;
     var domainRes;
+    var liveChatRes;
     var creditRes;
 
     var initRes;
@@ -76,6 +79,12 @@ function calculator() {
     } else {
         domainQty = 0;
     }
+    if (document.getElementById('liveChatSupport').value == "Yes") {
+        livechatQty = 1;
+    }
+    else {
+        livechatQty = 0;
+    }
     if (document.getElementById("creditSupport").value == "Yes") {
         creditQty = 1;
     } else {
@@ -92,12 +101,13 @@ function calculator() {
     hostRes = hostCost * hostQty;
     bookingRes = bookingCost * bookingQty;
     domainRes = domainFee * domainQty;
+    liveChatRes = liveChatcost * livechatQty;
     creditRes = creditDisc * creditQty;
 
 
 
     initRes = pageRes + contentRes + blogRes + analyticsRes + adsenseRes
-                + socialMediaRes + hostRes + bookingRes + domainRes - creditRes;
+                + socialMediaRes + hostRes + bookingRes + liveChatRes + domainRes - creditRes;
     resMonthly = hostRes + bookingRes;
     resYearly = resMonthly * 12 - (resMonthly*12*0.15);
     deposit = initRes / 2;
