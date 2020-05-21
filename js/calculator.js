@@ -1,7 +1,7 @@
 function calculator() {
 
-    var websiteCost = 180.00;
-    var pageCost = 6.00;
+    var websiteCost = 300.00;
+    var pageCost = 8.00;
     var contentCost = 60.00;
     var blogCost = 60.00;
     var analyticsCost = 25.00;
@@ -11,6 +11,7 @@ function calculator() {
     var bookingCost = 20.00;
     var domainFee = 10.00;
     var liveChatcost = 5.00;
+    var ecommerceCost = 250.00;
     var creditDisc = 5.00;
 
     var pageQty;
@@ -23,6 +24,7 @@ function calculator() {
     var bookingQty;
     var domainQty;
     var livechatQty;
+    var ecommerceQty;
     var creditQty;
 
     var pageRes;
@@ -35,7 +37,9 @@ function calculator() {
     var bookingRes;
     var domainRes;
     var liveChatRes;
+    var ecommerceRes;
     var creditRes;
+    var ecommerceMthly;
 
     var initRes;
     var resMonthly;
@@ -85,6 +89,14 @@ function calculator() {
     else {
         livechatQty = 0;
     }
+    if (document.getElementById('ecommerceSupport').value == "Yes") {
+        ecommerceQty = 1;
+        ecommerceMthly = 30;
+    }
+    else {
+        ecommerceQty = 0;
+        ecommerceMthly = 0;
+    }
     if (document.getElementById("creditSupport").value == "Yes") {
         creditQty = 1;
     } else {
@@ -102,13 +114,14 @@ function calculator() {
     bookingRes = bookingCost * bookingQty;
     domainRes = domainFee * domainQty;
     liveChatRes = liveChatcost * livechatQty;
+    ecommerceRes = ecommerceCost * ecommerceQty;
     creditRes = creditDisc * creditQty;
 
 
 
-    initRes = pageRes + contentRes + blogRes + analyticsRes + adsenseRes
-                + socialMediaRes + hostRes + bookingRes + liveChatRes + domainRes - creditRes;
-    resMonthly = hostRes + bookingRes;
+    initRes = websiteCost + pageRes + contentRes + blogRes + analyticsRes + adsenseRes
+                + socialMediaRes + hostRes + bookingRes + liveChatRes + ecommerceRes + domainRes - creditRes;
+    resMonthly = hostRes + bookingRes + ecommerceMthly;
     resYearly = resMonthly * 12 - (resMonthly*12*0.15);
     deposit = initRes / 2;
 
