@@ -1,6 +1,6 @@
 function calculator() {
 
-    var websiteCost = 0;
+    var websiteCost = 300.0;
     var pageCost = 8.00;
     var contentCost = 60.00;
     var blogCost = 60.00;
