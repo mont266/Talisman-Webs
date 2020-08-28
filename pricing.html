@@ -79,11 +79,30 @@
       <div class="calc">
         <form name="pricingcalc">
           <div class="form-group">
-            <label for="websiteQuantity">How Many Web Pages?</label>
+            <label for="websiteQuantity" title="How many web pages you want for your website">How Many Web Pages?</label>
             <input class="form-control" type="text" name="txtPages">
           </div>
+
           <div class="form-group">
-            <label for="websiteQuantity">Content Creation?</label>
+            <label for="websiteQuantity" title="Do you need us to host your website for you?">Web Hosting?</label>
+            <select id="hostSupport" class="form-control" name="txtHost">
+              <option value="Select">Select Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="websiteQuantity" title="Do you need us to register your web domain for you?">Domain Registration?</label>
+            <select id="domainSupport" class="form-control" name="txtDomain">
+              <option value="Select">Select Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="websiteQuantity" title="Do you need us to create all of the images and content for the website?">Content Creation?</label>
             <select id="contentCreation" class="form-control" name="txtContent">
               <option value="Select">Select Option</option>
               <option value="Yes">Yes</option>
@@ -91,82 +110,84 @@
             </select>
             <!--<input class="form-control" type="text" name="txtContent">-->
           </div>
+
           <div class="form-group">
-            <label for="websiteQuantity">Blog?</label>
-            <select id="blogSupport" class="form-control" name="txtBlog">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="websiteQuantity">Analytics?</label>
-            <select id="analyticsSupport" class="form-control" name="txtAnalytics">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="websiteQuantity">Google Adsense?</label>
-            <select id="adsenseSupport" class="form-control" name="txtAdsense">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="websiteQuantity">Social Media Page Quantity</label>
-            <input class="form-control" type="text" name="txtSocialMedia">
-          </div>
-          <div class="form-group">
-            <label for="websiteQuantity">Web Hosting?</label>
-            <select id="hostSupport" class="form-control" name="txtHost">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="websiteQuantity">Booking System?</label>
+            <label for="websiteQuantity" title="Do you require a booking system on your website?">Booking System?</label>
             <select id="bookingSupport" class="form-control" name="txtBooking">
               <option value="Select">Select Option</option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
           </div>
+
           <div class="form-group">
-            <label for="websiteQuantity">Domain Registration?</label>
-            <select id="domainSupport" class="form-control" name="txtDomain">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="liveChat">Live Chat Support?</label>
+            <label for="liveChat" title="Do you want a live chat on your website?">Live Chat Support?</label>
             <select id="liveChatSupport" class="form-control" name="txtLiveChat">
               <option value="Select">Select Option</option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
           </div>
+
           <div class="form-group">
-            <label for="ecommerce">E-Commerce Support?</label>
+            <label for="ecommerce" title="Is your website going to be an online shop?">E-Commerce Integration?</label>
             <select id="ecommerceSupport" class="form-control" name="txtEcommerce">
               <option value="Select">Select Option</option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
           </div>
+
           <div class="form-group">
-            <label for="websiteQuantity">Talisman Webs Watermark?</label>
+            <label for="websiteQuantity" title="Would you like to be able to edit and maintain the website yourself?">CMS Integration?</label>
+            <select id="cmsSupport" class="form-control" name="txtCMS">
+              <option value="Select">Select Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="websiteQuantity" title="Do you need a web blog on your website?">Blog?</label>
+            <select id="blogSupport" class="form-control" name="txtBlog">
+              <option value="Select">Select Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="websiteQuantity" title="Would you like to be able to see real time statistics on your website?">Analytics?</label>
+            <select id="analyticsSupport" class="form-control" name="txtAnalytics">
+              <option value="Select">Select Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="websiteQuantity" title="Would you like to make money with ad-placements on your website?">Google Adsense?</label>
+            <select id="adsenseSupport" class="form-control" name="txtAdsense">
+              <option value="Select">Select Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="websiteQuantity" title="Do you need us to set up social media pages for you? If so, How many?">Social Media Page Quantity</label>
+            <input class="form-control" type="text" name="txtSocialMedia">
+          </div>
+
+          <div class="form-group">
+            <label for="websiteQuantity" title="Would you like a £5 discount by giving us credit at the bottom of your website?">Talisman Webs Watermark?</label>
             <select id="creditSupport" class="form-control" name="txtCredit">
               <option value="Select">Select Option</option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
           </div>
+
           <div class="form-group"></div>
             <p id="initResult"></p> 
             <p id="resMonthly"></p>

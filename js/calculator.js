@@ -1,18 +1,19 @@
 function calculator() {
 
-    var websiteCost = 300.00;
+    var websiteCost = 0;
     var pageCost = 8.00;
     var contentCost = 60.00;
     var blogCost = 60.00;
     var analyticsCost = 25.00;
     var adsenseCost = 25.00;
     var socialMediaCost = 25.00;
-    var hostCost = 7.00;
+    var hostCost = 6.00;
     var bookingCost = 20.00;
     var domainFee = 10.00;
     var liveChatcost = 5.00;
     var ecommerceCost = 250.00;
     var creditDisc = 5.00;
+    var cmsCost = 4.00;
 
     var pageQty;
     var contentQty;
@@ -26,6 +27,7 @@ function calculator() {
     var livechatQty;
     var ecommerceQty;
     var creditQty;
+    var cmsQty;
 
     var pageRes;
     var contentRes;
@@ -40,6 +42,7 @@ function calculator() {
     var ecommerceRes;
     var creditRes;
     var ecommerceMthly;
+    var cmsRes;
 
     var initRes;
     var resMonthly;
@@ -102,7 +105,16 @@ function calculator() {
     } else {
         creditQty = 0;
     }
+    if (document.getElementById("cmsSupport").value == "Yes") {
+        cmsQty = 1;
+    } else {
+        cmsQty = 0;
+    }
 
+
+    if (document.getElementById("cmsSupport") == "Yes" && (document.getElementById("hostSupport") == "Yes"))  {
+        cmsCost = 2.00;
+    }
 
     pageRes = (pageCost * pageQty) + (1.5 * pageQty);
     contentRes = contentCost * contentQty;
@@ -116,12 +128,14 @@ function calculator() {
     liveChatRes = liveChatcost * livechatQty;
     ecommerceRes = ecommerceCost * ecommerceQty;
     creditRes = creditDisc * creditQty;
+    cmsRes = cmsCost * cmsQty;
+    
 
 
 
     initRes = websiteCost + pageRes + contentRes + blogRes + analyticsRes + adsenseRes
-                + socialMediaRes + hostRes + bookingRes + liveChatRes + ecommerceRes + domainRes - creditRes;
-    resMonthly = hostRes + bookingRes + ecommerceMthly;
+                + socialMediaRes + hostRes + bookingRes + liveChatRes + ecommerceRes + cmsRes + domainRes - creditRes;
+    resMonthly = hostRes + bookingRes + + cmsRes + ecommerceMthly;
     resYearly = resMonthly * 12 - (resMonthly*12*0.15);
     deposit = initRes / 2;
 
