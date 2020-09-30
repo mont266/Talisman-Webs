@@ -538,7 +538,7 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="contact-form">
-          <form class="contact-form" method="post" data-netlify="true">
+          <form class="contact-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
             <p class="contact-form-name">
               <label for="name">Name <span class="required">*</span></label>
               <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Name">
@@ -551,6 +551,7 @@
               <label for="message">Comment</label>
               <textarea aria-required="true" rows="8" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea>
             </p>
+            <input class="hidden" name="bot-field" placeholder="Don't fill this out if you're a human"/>
             <p>
               <button type="submit" class="btn btn-primary">Send</button>
             </p>
