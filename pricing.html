@@ -82,7 +82,7 @@
       <div class="col-sm-12">
       </div>
       <div id="calcu" class="calc">
-        <form name="pricingcalc" netlify-honeypot="bot-field" data-netlify="true" onsubmit="myFunction(); return false;">
+        <form name="pricingcalc" onsubmit="myFunction()">
           <div class="form-group">
             <label for="websiteType" title="Website Type">Website/Service Type</label>
             <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
@@ -352,16 +352,16 @@
         function myFunction() {
           document.querySelector("form").addEventListener("submit", handleSubmit);
 
-const handleSubmit = (e) => {
-  e.preventDefault()
-  let myForm = document.getElementById('pizzaOrder');
-  let formData = new FormData(myForm)
-  fetch('/', {
-    method: 'POST',
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString()
-  }).then(() => console.log('Form successfully submitted')).catch((error) =>
-    alert(error))
+          const handleSubmit = (e) => {
+          e.preventDefault()
+          let myForm = document.getElementById('pricingcalc');
+          let formData = new FormData(myForm)
+          fetch('/', {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+          }).then(() => console.log('Form successfully submitted')).catch((error) =>
+          alert(error))
 }
         }
     </script>
