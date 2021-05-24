@@ -71,10 +71,8 @@
   </div></div>
 </section>
 <div class="wrapper">
-  <a href="pricing.html"><button class="button">Full Website Pricing</button></a>
-  <a href="pricing-landingpage.html"><button class="button">Landing Page Pricing</button></a>
   <h1>Landing Page Pricing</h1>
-  <p>Pricing Calculator for a One-Page Informational Website</p>
+  <p>Pricing Calculator for professional landing pages.</p>
 </div> 
 <br>
 <br>
@@ -84,7 +82,46 @@
       <div class="col-sm-12">
       </div>
       <div class="calc">
-        <form name="pricingcalc">
+        <form name="landingcalc" netlify-honeypot="bot-field" data-netlify="true">
+          <div class="form-group">
+            <label for="websiteType" title="Website Type">Website/Service Type</label>
+            <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
+              <option value="Select">Landing Page</option>
+              <option value="pricing.html">Full Website</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="maintain" title="Is your website going to be an online shop?">Level of Expected Maintainence</label>
+            <select id="maintain" class="form-control" name="txtMaintain">
+              <option value="Select">None</option>
+              <option value="low">Low</option>
+              <option value="med">Medium</option>
+              <option value="high">High</option>
+            </select>
+          </div>
+
+          <p class="hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
+
+          <div class="form-group">
+            <label for="liveChat" title="Do you want a live chat on your website?">Live Chat Support?</label>
+            <select id="liveChatSupport" class="form-control" name="txtLiveChat">
+              <option value="Select">Select Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="websiteQuantity" title="Would you like to be able to see real time statistics on your website?">Analytics?</label>
+            <select id="analyticsSupport" class="form-control" name="txtAnalytics">
+              <option value="Select">Select Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </div>
 
           <div class="form-group">
             <label for="websiteQuantity" title="Do you need us to host your website for you?">Web Hosting?</label>
@@ -105,42 +142,6 @@
           </div>
 
           <div class="form-group">
-            <label for="liveChat" title="Do you want a live chat on your website?">Live Chat Support?</label>
-            <select id="liveChatSupport" class="form-control" name="txtLiveChat">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="websiteQuantity" title="Would you like to be able to edit and maintain the website yourself?">CMS Integration?</label>
-            <select id="cmsSupport" class="form-control" name="txtCMS">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="websiteQuantity" title="Would you like to be able to see real time statistics on your website?">Analytics?</label>
-            <select id="analyticsSupport" class="form-control" name="txtAnalytics">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="websiteQuantity" title="Would you like to make money with ad-placements on your website?">Google Adsense?</label>
-            <select id="adsenseSupport" class="form-control" name="txtAdsense">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-
-          <div class="form-group">
             <label for="websiteQuantity" title="Would you like a £5 discount by giving us credit at the bottom of your website?">Talisman Webs Watermark?</label>
             <select id="creditSupport" class="form-control" name="txtCredit">
               <option value="Select">Select Option</option>
@@ -149,11 +150,21 @@
             </select>
           </div>
 
-          <div class="form-group"></div>
-            <p id="initResult"></p> 
-            <p id="resMonthly"></p>
-            <p id="resYearly"></p>
-            <p id="deposit"></p>
+          <div class="form-group">
+            <label for="discountCode" title="Do You Have A Discount Code?">Discount Code</label>
+            <input class="form-control" id="discountCode" type="text" name="txtDisc">
+            <p id="savings"></p>
+          </div>
+
+          <div class="form-group">
+            <label id="initResult"> </label> 
+            <label id="resMonthly"></label>
+            <label id="resYearly"></label><br>
+            <label id="deposit"></label><br>
+
+            <label id="reference"></label><br>
+            <a href="javascript:void(Tawk_API.toggle())" id="help"></p>
+            </div>
           <div class="form-group">
             <input class="btn btn-primary" type="button" value="Calculate" onclick="calculator()">
          </div>
@@ -161,9 +172,10 @@
     </div>
     </div>
 
-    
+    <!--//COMING SOON! DO NOT TOUCH
     <div class="row">
       <div class="col-sm-12">
+        <h1 class="page-title">Mobile Apps</h1>
       </div>
     </div>
     <div class="row">
@@ -175,9 +187,8 @@
             <i class="dx-icon-paperplane-2"></i>
         </div>
         <div class="dxsingle_teaser_right">
-            <h3>One Page.</h3>
-            Landing pages are designed to be simple. That is why it is our most affordable service yet. Consists of one page, and all 
-            the infomation your consumers/clients need to know to get started with your project/product.
+            <h3><a href="#">Flights</a></h3>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
         </div>
       </div>
 
@@ -186,9 +197,8 @@
             <i class="dx-icon-earth-3"></i>
         </div>
         <div class="dxsingle_teaser_right">
-            <h3>Limitless Possibilities.</h3>
-            An event, A new mobile app, Information on a study or even a wedding informational countdown page for you guests. The possibilities
-            of a landing page are limitless.
+            <h3><a href="#">Cruises</a></h3>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
         </div>
       </div>  
 
@@ -200,9 +210,8 @@
             <i class="dx-icon-home"></i>
         </div>
         <div class="dxsingle_teaser_right">
-            <h3>Any project.</h3>
-            Landing pages are perfect for any project. Allows anyone interested in your project to see all relevant information fast and easy
-            without having to pay for a fully developed front end website.
+            <h3><a href="#">Hotels</a></h3>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
         </div>
       </div>
 
@@ -211,13 +220,13 @@
             <i class="dx-icon-brightness"></i>
         </div>
         <div class="dxsingle_teaser_right">
-            <h3>CMS Integration</h3>
-            This optional extra will allow you to maintain and edit your site yourself without any knowledge of code.
+            <h3><a href="#">Vacations</a></h3>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
         </div>
       </div>        
     </div>
 
-    </div>
+    </div>-->
   </div>
 </section>
 

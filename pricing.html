@@ -71,8 +71,6 @@
   </div></div>
 </section>
 <div class="wrapper">
-  <a href="pricing.html"><button class="button">Full Website Pricing</button></a>
-  <a href="pricing-landingpage.html"><button class="button">Landing Page Pricing</button></a>
   <h1>Full Website Pricing</h1>
   <p>Pricing Calculator for a full front-end website.</p>
 </div> 
@@ -84,29 +82,33 @@
       <div class="col-sm-12">
       </div>
       <div class="calc">
-        <form name="pricingcalc">
+        <form name="pricingcalc" netlify-honeypot="bot-field" data-netlify="true">
+          <div class="form-group">
+            <label for="websiteType" title="Website Type">Website/Service Type</label>
+            <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
+              <option value="Select">Full Website</option>
+              <option value="pricing-landingpage.html">Landing Page</option>
+            </select>
+          </div>
+          
           <div class="form-group">
             <label for="websiteQuantity" title="How many web pages you want for your website">How Many Web Pages?</label>
-            <input class="form-control" type="text" name="txtPages">
+            <input class="form-control" type="text" name="txtPages" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
           </div>
 
           <div class="form-group">
-            <label for="websiteQuantity" title="Do you need us to host your website for you?">Web Hosting?</label>
-            <select id="hostSupport" class="form-control" name="txtHost">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
+            <label for="maintain" title="Is your website going to be an online shop?">Level of Expected Maintainence</label>
+            <select id="maintain" class="form-control" name="txtMaintain">
+              <option value="Select">None</option>
+              <option value="low">Low</option>
+              <option value="med">Medium</option>
+              <option value="high">High</option>
             </select>
           </div>
 
-          <div class="form-group">
-            <label for="websiteQuantity" title="Do you need us to register your web domain for you?">Domain Registration?</label>
-            <select id="domainSupport" class="form-control" name="txtDomain">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
+          <p class="hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
 
           <div class="form-group">
             <label for="websiteQuantity" title="Do you need us to create all of the images and content for the website?">Content Creation?</label>
@@ -116,15 +118,6 @@
               <option value="No">No</option>
             </select>
             <!--<input class="form-control" type="text" name="txtContent">-->
-          </div>
-
-          <div class="form-group">
-            <label for="websiteQuantity" title="Do you require a booking system on your website?">Booking System?</label>
-            <select id="bookingSupport" class="form-control" name="txtBooking">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
           </div>
 
           <div class="form-group">
@@ -139,15 +132,6 @@
           <div class="form-group">
             <label for="ecommerce" title="Is your website going to be an online shop?">E-Commerce Integration?</label>
             <select id="ecommerceSupport" class="form-control" name="txtEcommerce">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="websiteQuantity" title="Would you like to be able to edit and maintain the website yourself?">CMS Integration?</label>
-            <select id="cmsSupport" class="form-control" name="txtCMS">
               <option value="Select">Select Option</option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
@@ -173,8 +157,8 @@
           </div>
 
           <div class="form-group">
-            <label for="websiteQuantity" title="Would you like to make money with ad-placements on your website?">Google Adsense?</label>
-            <select id="adsenseSupport" class="form-control" name="txtAdsense">
+            <label for="websiteQuantity" title="Do you need us to host your website for you?">Web Hosting?</label>
+            <select id="hostSupport" class="form-control" name="txtHost">
               <option value="Select">Select Option</option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
@@ -182,8 +166,12 @@
           </div>
 
           <div class="form-group">
-            <label for="websiteQuantity" title="Do you need us to set up social media pages for you? If so, How many?">Social Media Page Quantity (Numbers Only)</label>
-            <input class="form-control" type="text" name="txtSocialMedia">
+            <label for="websiteQuantity" title="Do you need us to register your web domain for you?">Domain Registration?</label>
+            <select id="domainSupport" class="form-control" name="txtDomain">
+              <option value="Select">Select Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
           </div>
 
           <div class="form-group">
@@ -195,11 +183,20 @@
             </select>
           </div>
 
-          <div class="form-group"></div>
-            <p id="initResult"></p> 
-            <p id="resMonthly"></p>
-            <p id="resYearly"></p>
-            <p id="deposit"></p>
+          <div class="form-group">
+            <label for="discountCode" title="Do You Have A Discount Code?">Discount Code</label>
+            <input class="form-control" id="discountCode" type="text" name="txtDisc">
+          </div>
+
+          <div class="form-group">
+            <label id="initResult"> </label> 
+            <label id="resMonthly"></label>
+            <label id="resYearly"></label><br>
+            <label id="deposit"></label><br>
+
+            <label id="reference"></label><br>
+            <a href="javascript:void(Tawk_API.toggle())" id="help"></p>
+            </div>
           <div class="form-group">
             <input class="btn btn-primary" type="button" value="Calculate" onclick="calculator()">
          </div>

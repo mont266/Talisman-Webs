@@ -1,8 +1,9 @@
 .calc {
     margin: auto;
-    width: 50%;
+    width: 75%;
     border: 3px solid green;
     padding: 10px;
+    text-align: center;
 }
 
 .wrapper{
