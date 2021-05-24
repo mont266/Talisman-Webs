@@ -144,6 +144,4 @@ function calculator() {
     document.getElementById("deposit").innerHTML = "Deposit: £ " + deposit;
     document.getElementById("ref").innerHTML = "Quote Reference: " + Date.now();
     document.getElementById("help").innerHTML = "If you are happy with your quote, Speak to us here!";
-
-    submitForm();
 }
