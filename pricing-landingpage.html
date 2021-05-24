@@ -82,7 +82,7 @@
       <div class="col-sm-12">
       </div>
       <div class="calc">
-        <form name="landingcalc" netlify-honeypot="bot-field" data-netlify="true">
+        <form name="landingcalc" action="#" netlify-honeypot="bot-field" data-netlify="true">
           <div class="form-group">
             <label for="websiteType" title="Website Type">Website/Service Type</label>
             <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
@@ -92,7 +92,17 @@
           </div>
 
           <div class="form-group">
-            <label for="maintain" title="Is your website going to be an online shop?">Level of Expected Maintainence</label>
+            <label for="name" title="Your Name">Your Name</label>
+            <input class="form-control" id="name" type="text" name="txtName">
+          </div>
+
+          <div class="form-group">
+            <label for="email" title="Your Email">Your Email</label>
+            <input class="form-control" id="email" type="email" name="txtEmail">
+          </div>
+
+          <div class="form-group">
+            <label for="maintain" title="How much do you want us to update your site?">Level of Expected Maintainence</label>
             <select id="maintain" class="form-control" name="txtMaintain">
               <option value="Select">None</option>
               <option value="low">Low</option>
@@ -162,11 +172,10 @@
             <label id="resYearly"></label><br>
             <label id="deposit"></label><br>
 
-            <label id="reference"></label><br>
             <a href="javascript:void(Tawk_API.toggle())" id="help"></p>
             </div>
           <div class="form-group">
-            <input class="btn btn-primary" type="submit" value="Calculate" onclick="calculator()">
+            <input class="btn btn-primary" type="" value="Calculate" onclick="calculator()">
          </div>
         </form>
     </div>

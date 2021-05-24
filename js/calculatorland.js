@@ -94,6 +94,5 @@ function calculator() {
     document.getElementById("initResult").innerHTML = "Full Payment: £ " + initRes + " + ";
     document.getElementById("resMonthly").innerHTML = "£" + resMonthly + " Per Month" + " (£ " + resYearly + " Yearly)";
     document.getElementById("deposit").innerHTML = "Deposit: £ " + deposit;
-    document.getElementById("reference").innerHTML = "Quote Reference: " + Date.now();
-    document.getElementById("help").innerHTML = "If you are happy with your quote, quote your reference here!";
+    document.getElementById("help").innerHTML = "If you are happy with your quote, Speak to us here!";
 }
