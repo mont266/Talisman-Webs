@@ -82,7 +82,7 @@
       <div class="col-sm-12">
       </div>
       <div id="calcu" class="calc">
-        <form name="pricingcalc" data-netlify="true" action="#middle">
+        <form name="pricingcalc" netlify-honeypot="bot-field" data-netlify="true" action="#middle">
           <div class="form-group">
             <label for="websiteType" title="Website Type">Website/Service Type</label>
             <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
@@ -203,6 +203,7 @@
             <label id="resMonthly"></label>
             <label id="resYearly"></label><br>
             <label id="deposit"></label><br>
+            <label id="ref"></label><br>
 
             <a href="javascript:void(Tawk_API.toggle())" id="help"></p>
             </div>

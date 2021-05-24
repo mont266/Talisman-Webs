@@ -1,18 +1,3 @@
-function submitForm(e) {
-    e.preventDefault()
-    fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: this.encode({
-            "form-name": "ask-question",
-            "form_field": "something"
-          })
-        })
-          .then(() => {
-           // custom logic goes here //
-          })
-  }
-
 function calculator() {
 
     var websiteCost = 450.0;
@@ -57,32 +42,42 @@ function calculator() {
 
     pageQty = (document.pricingcalc.txtPages.value);
 
+    //Content Creation
     if (document.getElementById("contentCreation").value == "Yes") {
         contentQty = 1;
     } else {
         contentQty = 0;
     }
+
+    //Blog
     if (document.getElementById("blogSupport").value == "Yes") {
         blogQty = 1;
     } else {
         blogQty = 0;
     }
+
+    //Analytics
     if (document.getElementById("analyticsSupport").value == "Yes") {
         analyticsQty = 1;
     } else {
         analyticsQty = 0;
     }
+
+    //Domain
     if (document.getElementById("domainSupport").value == "Yes") {
         domainQty = 1;
     } else {
         domainQty = 0;
     }
+
+    //Live Chat
     if (document.getElementById('liveChatSupport').value == "Yes") {
         livechatQty = 1;
     }
     else {
         livechatQty = 0;
     }
+
     //Level of Maintanence
     if (document.getElementById("maintain").value == "low") {
         mainRes = mainLow;
@@ -97,19 +92,22 @@ function calculator() {
         mainRes = 0;
     }
 
-
-
+    //Hosting
     if (document.getElementById("hostSupport").value == "Yes") {
         hostQty = 1;
     } else {
         hostQty = 0;
     }
+
+    //eCommerce
     if (document.getElementById('ecommerceSupport').value == "Yes") {
         ecommerceQty = 1;
     }
     else {
         ecommerceQty = 0;
     }
+
+    //Credit Discount
     if (document.getElementById("creditSupport").value == "Yes") {
         creditQty = 1;
     } else {
@@ -144,6 +142,7 @@ function calculator() {
     document.getElementById("initResult").innerHTML = "Full Payment: £ " + initRes + " + ";
     document.getElementById("resMonthly").innerHTML = "£" + resMonthly + " Per Month" + " (£ " + resYearly + " Yearly)";
     document.getElementById("deposit").innerHTML = "Deposit: £ " + deposit;
+    document.getElementById("ref").innerHTML = "Quote Reference: " + Date.now();
     document.getElementById("help").innerHTML = "If you are happy with your quote, Speak to us here!";
 
     submitForm();

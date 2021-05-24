@@ -71,7 +71,7 @@ function calculator() {
     }
 
     //Discount Codes
-    if (document.getElementById("discountCode").value == "LANDING50") {
+    if (document.getElementById("discountCode").value == "LANDING100") {
         websiteCost = 50.00;
         document.getElementById("savings").innerHTML = "Savings: £100";
     } else {
@@ -94,5 +94,6 @@ function calculator() {
     document.getElementById("initResult").innerHTML = "Full Payment: £ " + initRes + " + ";
     document.getElementById("resMonthly").innerHTML = "£" + resMonthly + " Per Month" + " (£ " + resYearly + " Yearly)";
     document.getElementById("deposit").innerHTML = "Deposit: £ " + deposit;
+    document.getElementById("ref").innerHTML = "Quote Reference: " + Date.now();
     document.getElementById("help").innerHTML = "If you are happy with your quote, Speak to us here!";
 }

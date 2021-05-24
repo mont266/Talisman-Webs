@@ -82,7 +82,7 @@
       <div class="col-sm-12">
       </div>
       <div class="calc">
-        <form name="landingcalc" action="#" netlify-honeypot="bot-field" data-netlify="true">
+        <form name="landingcalc" action="#middle" netlify-honeypot="bot-field" data-netlify="true">
           <div class="form-group">
             <label for="websiteType" title="Website Type">Website/Service Type</label>
             <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
@@ -171,6 +171,7 @@
             <label id="resMonthly"></label>
             <label id="resYearly"></label><br>
             <label id="deposit"></label><br>
+            <label id="ref"></label><br>
 
             <a href="javascript:void(Tawk_API.toggle())" id="help"></p>
             </div>
@@ -315,5 +316,56 @@
         })();
       </script>
       <!--End of Tawk.to Script-->
+
+      <script>
+
+        // jQuery Version
+        // $("#my-form").submit(function(e) {
+        //   e.preventDefault();
+  
+        //   var $form = $(this);
+        //   $.post($form.attr("action"), $form.serialize()).then(function() {
+        //     alert("Thank you!");
+        //   });
+        // });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        let testForm = document.querySelector("#middle form");
+        
+        testForm.addEventListener('submit', e => {
+          e.preventDefault();
+  
+          const formData = new FormData(testForm);
+          fetch(testForm.getAttribute('action'), {
+            method: 'POST',
+            headers: {
+              'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+            },
+            body: new URLSearchParams(formData).toString()
+          })
+          .then(res => {
+            if (res) {
+              M.toast({
+                html: 'Thank you for your submission!',
+                classes: 'pulse'
+              });
+            }
+          });
+        });
+      
+      </script>
     </body>
 </html>
