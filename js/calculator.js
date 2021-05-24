@@ -1,3 +1,18 @@
+function submitForm(e) {
+    e.preventDefault()
+    fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: this.encode({
+            "form-name": "ask-question",
+            "form_field": "something"
+          })
+        })
+          .then(() => {
+           // custom logic goes here //
+          })
+  }
+
 function calculator() {
 
     var websiteCost = 450.0;
@@ -130,4 +145,6 @@ function calculator() {
     document.getElementById("resMonthly").innerHTML = "£" + resMonthly + " Per Month" + " (£ " + resYearly + " Yearly)";
     document.getElementById("deposit").innerHTML = "Deposit: £ " + deposit;
     document.getElementById("help").innerHTML = "If you are happy with your quote, Speak to us here!";
+
+    submitForm();
 }
