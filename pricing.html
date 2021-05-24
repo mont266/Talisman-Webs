@@ -82,7 +82,7 @@
       <div class="col-sm-12">
       </div>
       <div id="calcu" class="calc">
-        <form name="pricingcalc" onsubmit="myFunction()">
+        <form name="pricingcalc" onsubmit="return myFunction()">
           <div class="form-group">
             <label for="websiteType" title="Website Type">Website/Service Type</label>
             <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
@@ -353,7 +353,7 @@
           document.querySelector("form").addEventListener("submit", handleSubmit);
 
           const handleSubmit = (e) => {
-          e.preventDefault()
+          
           let myForm = document.getElementById('pricingcalc');
           let formData = new FormData(myForm)
           fetch('/', {
@@ -363,6 +363,7 @@
           }).then(() => console.log('Form successfully submitted')).catch((error) =>
           alert(error))
 }
+e.preventDefault()
         }
     </script>
     
