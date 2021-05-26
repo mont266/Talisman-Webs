@@ -82,7 +82,7 @@
       <div class="col-sm-12">
       </div>
       <div class="calc" id="calc">
-        <form name="landingcalc"  netlify-honeypot="bot-field" data-netlify="true" action="#calc">
+        <form name="landingcalc"  netlify-honeypot="bot-field" data-netlify="true" action="#middle">
           <div class="form-group">
             <label for="websiteType" title="Website Type">Website/Service Type</label>
             <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
@@ -342,7 +342,7 @@
   
   
   
-        let testForm = document.querySelector("landingcalc");
+        let testForm = document.querySelector("#middle form");
         
         testForm.addEventListener('submit', e => {
           e.preventDefault();
