@@ -8,7 +8,7 @@ function calculator() {
     var hostCost = 6.00;
     var domainFee = 10.00;
     var liveChatcost = 10.00;
-    var ecommerceCost = 280.00;
+    var ecommerceCost = 300.00;
     var creditDisc = 10.00;
     var mainLow = 10.00;
     var mainMed = 15.00;
