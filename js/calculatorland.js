@@ -1,6 +1,6 @@
 function calculator() {
 
-    var websiteCost = 150.0;
+    var websiteCost = 200.0;
     var analyticsCost = 25.00;
     var hostCost = 6.00;
     var domainFee = 10.00;

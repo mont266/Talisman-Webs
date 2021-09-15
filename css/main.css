@@ -72,8 +72,8 @@ transition: background-color 0.2s linear 0s;
 .carousel-control .icon-prev:before, .carousel-control .icon-next:before {content:"\e833"; font-family: 'fontello'; text-shadow:none; position: absolute; top:10px; left:11px; color:#fff;}
 .carousel-control > span.icon-next:before {content:"\e834"; left:13px;}
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {margin: auto;}
-.progress {height: 50px; box-shadow: none; background-color: #343434; border-radius: 0; margin-bottom: 10px; border:4px solid #fff; position:relative;}
-.progress span {display: inline-block; padding: 10px 19px; position: absolute; clip:auto; z-index: 2; font-size: 12px; font-weight: 700; text-transform: uppercase; text-align: left; color:#fff;}
+.progress {height: 50px;  box-shadow: none; background-color: #343434; border-radius: 0; margin-left:auto; margin-right:auto; margin-bottom: 10px; border:4px solid #fff; position:relative;}
+.progress span {display: inline-block; padding: 10px 19px; position: absolute; clip:auto; margin-left:auto; margin-right:auto; z-index: 2; font-size: 12px; font-weight: 700; text-transform: uppercase; text-align: left; color:#fff;}
 .progress-bar { -webkit-box-shadow: none; box-shadow: none; padding: 5px 0; position: relative; visibility: hidden;}
 .stretchRight {visibility: visible;}
 .sr-only {position: static; width:auto; height: auto;}
@@ -131,9 +131,9 @@ blockquote h3 {margin-top: 0; font-style: normal;}
 #features {padding: 90px 0 57px;}
 #skills {padding: 88px 0 80px;}
 #testimonials > div {padding-top: 106px; padding-bottom: 90px;}
-#process {padding: 89px 0 0;}
+#process {padding-top: 106px; padding-bottom: 90px;}
 #team {padding: 91px 0 102px;}
-#progress > div {padding-top: 100px; padding-bottom: 68px;}
+#progress > div {padding-top: 100px; padding-bottom: 68px; }
 #portfolio {padding: 86px 0 78px;}
 #belowcontent {padding: 89px 0 60px;}
 #info > div {padding-top: 82px; padding-bottom: 88px;}
@@ -438,6 +438,8 @@ aside .block + .block {margin-top: 34px;}
 .title_section h3 { line-height: 1.4em;}
 .color_section {background-color: #ff6f6f; color:#343434;}
 .grey_section {background-color: #343434;}
+.green_section {background-color: #a7d163;}
+.white_section {background-color: #ffffff;}
 .dark_section {background-color: #242424;}
 .bg-color0,.bg-color1,.bg-color2,.bg-color3,.bg-color1>div,.bg-color2>div,.bg-color3>div,.bg-color1:after,.bg-color2:after,.bg-color3:after {
     -webkit-transition: all 1s ease;
@@ -1552,6 +1554,11 @@ display: inline-block;
     .author-social {display: block; position: static; padding: 20px 0 0 0;}
 }
 
+textarea {
+    width: 100%;
+    height: 150px;
+  }
+
 .related-posts > h3 {margin-bottom: 24px; font-size: 30px;}
 .related-posts article.post {background-color: rgba(100,100,100,0.08); text-align: center; border-bottom: 10px solid #fbcf61; padding-bottom: 14px;}
 .related-posts article.post.format-gallery {border-color: #a8d164;}
@@ -1901,6 +1908,13 @@ p.contact-form-name,p.contact-form-email,p.contact-form-subject {
 }
 p.contact-form-message, p.form-submit {
    padding:0;
+}
+
+#timer {
+    text-align: center;
+    font-size: 72px;
+    color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
 }
 
 @media (max-width: 570px) {

@@ -38,21 +38,21 @@
 <section id="header" class="bg-color0">
     <div class="container"><div class="row">
 
-      <a class="navbar-brand" href="#top"><img src="img/logo.png" alt=""></a>
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
 
       <div class="col-sm-12 mainmenu_wrap"><div class="main-menu-icon visible-xs"><span></span><span></span><span></span></div>
         <ul id="mainmenu" class="nav menu sf-menu responsive-menu superfish">
-          <li class="active">
+          <li class="">
             <a href="index.html">Home</a>
           </li>
           <li class="">
-            <a href="#portfolio">Portfolio</a>
+            <a href="./index.html#portfolio">Portfolio</a>
           </li>
-          <li class="">
+          <li class="active">
             <a href="charity.html">Charity</a>
           </li>
           <li class="">
-            <a href="#contact">Contact</a>
+            <a href="./index.html#contact">Contact</a>
           </li>
           <li class="">
             <a href="pricing.html">Pricing</a>
@@ -63,112 +63,68 @@
     </div></div>
 </section>
 
-<div class="color_section"><section id="mainslider" class="bg-color1"><div><div class="flexslider">
-  <ul class="slides">
-
-       
-    <li class="" data-bg="bg-color1">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 leftcontent">
-            <div class="slide_description">
-              <div class="imagetitle">We Build <strong>Websites.</strong></div>
-              <div class="imagedesc">We work with you to create a professional, simple website for your personal project or business.</div>
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <img class="leftcontent_image" alt="Left content image" src="example/slide1.png">
-          </div>
-
-        </div>
-      </div>
-    </li>
-    
-       
-    <li class="" data-bg="bg-color2">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 leftcontent">
-            <div class="slide_description">
-              <div class="imagetitle">We Develop <strong>Apps.</strong></div>
-              <div class="imagedesc">We offer affordable App development for your business on Android and iOS.</div>
-            </div>
-          </div>
-
-          <div class="col-sm-6">
-            <img class="leftcontent_image negative-margin-60" alt="Left content image" src="example/slide4.png">
-          </div>
-
-        </div>
-      </div>
-    </li>
-    
-       
-    <li class="" data-bg="bg-color3">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 leftcontent">
-            <div class="slide_description">
-              <div class="imagetitle">We <strong>Deliver.</strong></div>
-              <div class="imagedesc">We can handle all website and app development, web hosting, domain registration and much more delivering a hassle free experience for our clients.</div>
-            </div>
-          </div>
-          
-          <div class="col-sm-6">
-            <img class="leftcontent_image" alt="Left content image" src="example/slide3.png">
-          </div>
-          
-
-        </div>
-      </div>
-    </li>
-    
-    
-  </ul>
-</div>
-</div></section></div>
-
-
-<section id="features" class="grey_section">
+<section id="features" class="pastel_section">
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
-          <h2 class="block-header">Why Choose Us?</h2>
-          <p>Experts in Web and App development, we are exactly what your business needs to thrive in the digital world.</p>
+          <h2 class="block-header">Register Your Charity</h2>
+          <p>We will pick a charity on the 1st of every month to receive a free landing page!</p>
         </div>
       </div>
       
-      <div class="row">
-        <div class="block col-sm-4">
-          <div class="single_teaser intro_images">
-            <div class="introimg">
-              <img src="example/icon-1.png" alt="">
-            </div>
-            <h3><a href="#">Modern</a></h3>
-            <p class="introtext">We develop sleek, modern and attractive websites and apps for your business or personal use.</p><br>
-            </div>
-       </div>
-     
-        <div class="block col-sm-4">
-          <div class="single_teaser intro_images border-color2">
-            <div class="introimg">
-              <img src="example/icon-2.png" alt="">
-            </div>
-            <h3><a href="#">Simple</a></h3>
-            <p class="introtext">We make expanding your business to the digital world simple and can handle everything from development to webhosting for you!</p><br>
-            </div>
-       </div>
-     
-        <div class="block col-sm-4">
-          <div class="single_teaser intro_images border-color3">
-            <div class="introimg">
-              <img src="example/icon-3.png" alt="">
-            </div>
-            <h3><a href="#">Flexible</a></h3>
-            <p class="introtext">We base your project around your needs and can continue support even after the project has been finished.</p><br>
-            </div>
-       </div>
+          <div id="calcu" class="calc">
+            <form name="Charity" netlify-honeypot="bot-field" data-netlify="true" action="#middle">
+
+              <div class="form-group">
+                <label for="name" title="Your Name" aria-required="true">Your Name</label>
+                <input class="form-control" id="name" type="text" name="txtName">
+              </div>
+    
+              <div class="form-group">
+                <label for="email" title="Your Email" aria-required="true">Your Email</label>
+                <input class="form-control" id="email" type="email" name="txtEmail">
+              </div>
+
+              <div class="form-group">
+                <label for="phone" title="Your Phone Number" aria-required="true">Your Phone Number</label>
+                <input class="form-control" id="phone" type="phone" name="txtPhone">
+              </div>
+              
+              <div class="form-group">
+                <label for="websiteQuantity" title="Your Charity's Name">Your Charity Name</label>
+                <input class="form-control" id="name" type="text">
+              </div>
+
+              <div class="form-group">
+                <label for="websiteQuantity" title="Facebook Link">Charities Facebook Link</label>
+                <input class="form-control" id="name" type="text">
+              </div>
+
+              <div class="form-group">
+                <label title="Message">What Does Your Charity Do?</label>
+                <textarea name="description" form="charity"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label title="Message">How Would Your Charity Benefit From A Website?</label>
+                <textarea name="benefit" form="charity"></textarea>
+              </div>
+    
+              <p class="hidden">
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+    
+                </div>
+                <center>
+              <div class="form-group">
+                <label>By pressing Submit, you acknowledge that this form collects data based on what you have entered in the above fields.</label><br>
+                <p id="submit1"></p>
+                <input class="btn btn-primary" type="Submit" value="Submit" onclick="submit1()">
+              </center>
+             </div>
+            </form>
+        </div>
+      </div>
      
 
     </div>
@@ -213,136 +169,38 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 text-center">
-          <h2 class="block-header">Latest Projects</h2>
-          <p>Have a look at some of our recent masterpieces.</p>
+          <h2 class="block-header">Countdown To Next Giveaway</h2>
         </div>
       </div>
-
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <a href="https://www.zibbl.co.uk"><img class="fullwidthimage" alt="Full Width Image" src="img/zibbl_thumb.jpg"></a>
-          </li>
-          <li>
-            <a href="http://www.drinkmania.co"><img class="fullwidthimage" alt="Full width image" src="img/drinkmania_thumb.jpg"></a>
-          </li>
-          <li>
-            <a href="http://www.domesticangels.net"><img class="fullwidthimage" alt="Full width image" src="img/domestic_angels_thumb.jpg"></a>
-          </li>
-          <li>
-            <a href="http://www.dwpowerwashing.co.uk"><img class="fullwidthimage" alt="Full width image" src="img/dwpowerwashing_thumb.jpg"></a>
-          </li>
-       </ul>
-      </div>
-    </div>
-  </div>
+      <p id="timer"></p>
+      <p></p>
 </div>
 </section>
-
-<!-- <section id="team" class="dark_section">
-  <div class="container"><div class="row">
-      <div class="col-sm-12 text-center">
-          <h2 class="block-header">Meet The Team</h2>
-          <p>
-            Some of the key people behind our success.
-          </p>
-      </div>
-  </div>
-  <div class="row">
-    <div class="block col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="example/team1.jpg" alt="team">
-        <div class="caption">
-          <h4>Scott Montford</h4>
-          <p>Founder - Web and App Developer</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
-        </div>
-        <p class="team-social">
-          <a class="socialico-linkedin" href="https://www.linkedin.com/in/scott-montford-b566b912a/" title="LinkedIn">#</a>
-          <a class="socialico-facebook" href="#" title="Facebook">#</a>
-          <a class="socialico-twitter" href="#" title="Twitter">#</a>
-          <a class="socialico-dribble" href="#" title="LinkedIn">#</a>
-        </p>
-      </div>
-    </div>
-    <div class="block col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="example/team2.jpg" alt="team">
-        <div class="caption">
-          <h4>Jukka Koivu</h4>
-          <p>Our Expert in Web and App Development</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
-        </div>
-        <p class="team-social">
-          <a class="socialico-facebook" href="#" title="Facebook">#</a>
-          <a class="socialico-flickr" href="#" title="Twitter">#</a>
-          <a class="socialico-linkedin" href="linkedin.com/in/jukka-koivu-95774111a" title="LinkedIn">#</a>
-        </p>
-      </div>
-    </div>
-    <div class="block col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="example/team3.jpg" alt="team">
-        <div class="caption">
-          <h4>Joe Smith</h4>
-          <p>Creative Director</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
-        </div>
-        <p class="team-social">
-          <a class="socialico-twitter" href="#" title="Twitter">#</a>
-          <a class="socialico-facebook" href="#" title="Facebook">#</a>
-          <a class="socialico-google" href="#" title="LinkedIn">#</a>
-        </p>
-      </div>
-    </div>
-    <div class="block col-sm-6 col-md-3">
-      <div class="thumbnail">
-        <img src="example/team4.jpg" alt="team">
-        <div class="caption">
-          <h4>Johanna Smith </h4>
-          <p>Creative Director</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat possimus laboriosam et.</p>
-        </div>
-        <p class="team-social">
-          <a class="socialico-twitter" href="#" title="Twitter">#</a>
-          <a class="socialico-facebook" href="#" title="Facebook">#</a>
-          <a class="socialico-linkedin" href="#" title="LinkedIn">#</a>
-        </p>
-      </div>
-    </div>
-
-
-  </div>
-</div>
-</section> -->
-
 
 <section id="progress" class="color_section bg-color3">
   <div class="container">
     <div class="row">
+      <div class="block col-sm-3">
+        <div class="arctcle">
+          <div class="">
+            <div class="">
+              <i class=""></i>
+            </div>
+            <h2></h2>
+            <h3></h3>
+            
+          </div>
+        </div>
+      </div>
+
     <div class="block col-sm-3">
       <div class="arctcle">
         <div class="single_teaser icons style2">
           <div class="icons_introimg image-icon">
             <i class="rt-icon-user3"></i>
           </div>
-          <h2>4</h2>
-          <h3>Happy Clients</h3>
-          
-        </div>
-      </div>
-    </div>
-
-    <div class="block col-sm-3">
-      <div class="arctcle">
-        <div class="single_teaser icons style2">
-          <div class="icons_introimg image-icon">
-            <i class="rt-icon-facebook"></i>
-          </div>
-          <h2>2</h2>
-          <h3>Social Media Pages</h3>
+          <h2>0</h2>
+          <h3>Websites donated</h3>
           
         </div>
       </div>
@@ -351,28 +209,26 @@
       <div class="arctcle">
         <div class="single_teaser icons style2">
           <div class="icons_introimg image-icon">
-            <i class="rt-icon-monitor"></i>
+            <i class="rt-icon-banknote"></i>
           </div>
-          <h2>3</h2>
-          <h3>Full Websites Developed</h3>
+          <h2>£0</h2>
+          <h3>Worth of websites donated</h3>
           
         </div>
       </div>
     </div>
-
     <div class="block col-sm-3">
       <div class="arctcle">
-        <div class="single_teaser icons style2">
-          <div class="icons_introimg image-icon">
-            <i class="rt-icon-desktop"></i>
+        <div class="">
+          <div class="">
+            <i class=""></i>
           </div>
-          <h2>1</h2>
-          <h3>Landing Pages Developed</h3>
+          <h2></h2>
+          <h3></h3>
           
         </div>
       </div>
     </div>
-  
   </div></div>
 </section>
 
@@ -381,140 +237,131 @@
 <section id="portfolio" class="grey_section">
     <div class="container"><div class="row">
       <div class="col-sm-12 text-center">
-          <h2 class="block-header">Our Portfolio</h2>
-          <p>All of our work.</p>
+          <h2 class="block-header">Our Charity Portfolio</h2>
+          <p>Sites we have donated to charity</p>
       </div>
   </div></div>
 <div id="portfolio_wrapper">
     <div class="text-center filters">
-      <ul id="filtrable">
-        <li><a class="selected" data-filter="*" href="#">All</a></li>
-        <li><a data-filter=".websites" href="#" class="">Websites</a></li>
-        <li><a data-filter=".social" href="#" class="">Social Media Pages</a></li>
-      </ul>
       <div class="clearfix"></div>
     </div>
       <!-- Items -->
       
       <ul class="items-row cols-3 portfolio filtrable clearfix isotope" id="portfolioContainer">
-        <li class="item isotope-item websites"> 
+        <li class="item isotope-item"> 
           
           <!-- Image  --> 
           
           <div class="portfolio_item_image">
-            <img alt="" src="img/domestic_angels_thumb.jpg">
+            <img alt="" src="img/placeholder_web.jpg">
           </div>
           <div class="item_title">
             <h4>
-              <a href="http://www.domesticangels.net">Domestic Angels</a>
+              <a href="charity.html">Enter Your Charity</a>
             </h4>
           </div>
         </li>
         
-        <li class="item isotope-item websites"> 
+        <li class="item isotope-item"> 
           
           <!-- Image  --> 
           
           <div class="portfolio_item_image">
-            <img alt="" src="img/drinkmania_thumb.jpg">
+            <img alt="" src="img/placeholder_web.jpg">
           </div>
           <div class="item_title">
             <h4>
-              <a href="http://www.drinkmania.co">DrinkMania</a>
+              <a href="charity.html">Enter Your Charity</a>
             </h4>
           </div>     
         </li>
         
-        <li class="item isotope-item websites"> 
+        <li class="item isotope-item"> 
           
           <!-- Image  --> 
           
           <div class="portfolio_item_image">
-            <img alt="" src="img/dwpowerwashing_thumb.jpg">
+            <img alt="" src="img/placeholder_web.jpg">
           </div>
           <div class="item_title">
             <h4>
-              <a href="http://www.dwpowerwashing.co.uk">DW Power Washing</a>
+              <a href="charity.html">Enter Your Charity</a>
             </h4>
           </div>
         </li>
         
-        <li class="item isotope-item social"> 
+        <li class="item isotope-item"> 
           
           <!-- Image  --> 
           
           <div class="portfolio_item_image">
-            <img alt="" src="img/dwpowerwashing_fb.jpg">
+            <img alt="" src="img/placeholder_web.jpg">
           </div>
           <div class="item_title">
             <h4>
-              <a href="https://www.facebook.com/DWPowerWashingAndGardening/">DW Power Washing</a>
-            </h4>
-          </div>               
-        </li>
-        
-        <li class="item isotope-item social"> 
-          
-          <!-- Image  --> 
-          
-          <div class="portfolio_item_image">
-            <img alt="" src="img/domesticangels_fb.jpg">
-          </div>
-          <div class="item_title">
-            <h4>
-              <a href="https://www.facebook.com/DomesticAngels12">Domestic Angels</a>
+              <a href="charity.html">Enter Your Charity</a>
             </h4>
           </div>               
         </li>
         
-        <li class="item isotope-item social"> 
+        <li class="item isotope-item"> 
           
           <!-- Image  --> 
           
           <div class="portfolio_item_image">
-            <img alt="" src="img/placeholder_social.jpg">
+            <img alt="" src="img/placeholder_web.jpg">
           </div>
           <div class="item_title">
             <h4>
-              <a href="pricing-social.html">Your Social Media Page</a>
+              <a href="charity.html">Enter Your Charity</a>
+            </h4>
+          </div>               
+        </li>
+        
+        <li class="item isotope-item"> 
+          
+          <!-- Image  --> 
+          
+          <div class="portfolio_item_image">
+            <img alt="" src="img/placeholder_web.jpg">
+          </div>
+          <div class="item_title">
+            <h4>
+              <a href="charity.html">Enter Your Charity</a>
             </h4>
           </div>          
         </li>
         
-        <li class="item isotope-item websites"> 
+        <li class="item isotope-item"> 
           
           <!-- Image  --> 
           
           <div class="portfolio_item_image">
-            <img alt="" src="img/zibbl_thumb.jpg">
+            <img alt="" src="img/placeholder_web.jpg">
           </div>
           <div class="item_title">
             <h4>
-              <a href="https://www.zibbl.co.uk">Zibbl</a>
+              <a href="charity.html">Enter Your Charity</a>
             </h4>
           </div>               
         </li>
         
-        <li class="item isotope-item websites"> 
+        <li class="item isotope-item"> 
           
           <!-- Image  --> 
           
           <div class="portfolio_item_image">
-            <img alt="" src="img/nemesis_thumb.jpg">
+            <img alt="" src="img/placeholder_web.jpg">
           </div>
           <div class="item_title">
             <h4>
-              <a href="http://www.nemesischeer.co.uk">Nemesis Cheer and Dance</a>
+              <a href="charity.html">Enter Your Charity</a>
             </h4>
           </div>               
         </li>       
   
       </ul>
     </div> <!--eof portfolio_wrapper-->
-      <div class="container">
-            <div class="row">
-          <div class="col-sm-12"><p class="text-center loadmore"><a href="portfolio.html" class="theme_btn inverse">View More</a></p></div>  
-        </div></div>
 </section>
 
 <!--//MAP FOR FUTURE USE\\
@@ -612,7 +459,6 @@
 <div class="preloader">
   <div class="preloaderimg"></div>
 </div>
-
   
         <script src="js/vendor/respond.min.js"></script>
         <script src="js/vendor/placeholders.min.js"></script>
@@ -635,6 +481,7 @@
         <script src='twitter/jquery.tweet.min.js'></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/form_submit.js"></script>
 
          <!-- Map Scripts -->
 
@@ -698,5 +545,37 @@
         })();
       </script>
       <!--End of Tawk.to Script-->
+
+      <!-- Countdown timer -->
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 1, 2021 12:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
     </body>
 </html>
