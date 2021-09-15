@@ -1917,6 +1917,20 @@ p.contact-form-message, p.form-submit {
     font-family: "Times New Roman", Times, serif;
 }
 
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    #timer {
+        font-size: 32px;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    #timer {
+        font-size: 48px;
+    }
+}
+
 @media (max-width: 570px) {
 
     p.contact-form-name, p.contact-form-email, p.contact-form-subject {
