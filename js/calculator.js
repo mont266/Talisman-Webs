@@ -157,6 +157,30 @@ function calculator() {
             ecommerceMonCost = 12.00;
         }
 
+        if (document.getElementById("discountCode").value == "Ref") {
+            websiteCost = 382.50;
+            pageCost = 6.80;
+            contentCost = 51.00;
+            blogCost = 51.00;
+            analyticsCost = 21.25;
+            hostCost = 5.10;
+            domainFee = 8.50;
+            liveChatcost = 8.50;
+            ecommerceCost = 255.00;
+            ecommerceMonCost = 10.20;
+        } else {
+            websiteCost = 450.00;
+            pageCost = 8.00;
+            contentCost = 60.00;
+            blogCost = 60.00;
+            analyticsCost = 25.00;
+            hostCost = 6.00;
+            domainFee = 10.00;
+            liveChatcost = 10.00;
+            ecommerceCost = 300.00;
+            ecommerceMonCost = 12.00;
+        }
+
     pageRes = (pageCost * pageQty) + (1.5 * pageQty);
     contentRes = contentCost * contentQty;
     blogRes = blogCost * blogQty;
