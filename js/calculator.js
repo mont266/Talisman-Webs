@@ -1,6 +1,6 @@
 function calculator() {
 
-    var websiteCost = 450.0;
+    var websiteCost = 400.0;
     var pageCost = 8.00;
     var contentCost = 60.00;
     var blogCost = 60.00;
@@ -9,6 +9,7 @@ function calculator() {
     var domainFee = 10.00;
     var liveChatcost = 10.00;
     var ecommerceCost = 300.00;
+    var ecommerceMonCost = 12.00;
     var creditDisc = 10.00;
     var mainLow = 10.00;
     var mainMed = 15.00;
@@ -22,6 +23,7 @@ function calculator() {
     var domainQty;
     var livechatQty;
     var ecommerceQty;
+    var ecommerceMonQty;
     var creditQty;
 
     var pageRes;
@@ -32,6 +34,7 @@ function calculator() {
     var domainRes;
     var liveChatRes;
     var ecommerceRes;
+    var ecommerceMonRes;
     var creditRes;
     var mainRes;
 
@@ -102,9 +105,12 @@ function calculator() {
     //eCommerce
     if (document.getElementById('ecommerceSupport').value == "Yes") {
         ecommerceQty = 1;
+        ecommerceMonQty = 1;
+        hostQty = 0;
     }
     else {
         ecommerceQty = 0;
+        ecommerceMonQty = 0;
     }
 
     //Credit Discount
@@ -114,12 +120,42 @@ function calculator() {
         creditQty = 0;
     }
 
-    //Discount Codes
-    if (document.getElementById("discountCode").value == "LAUNCH50") {
-        websiteCost = 200.00;
-    } else {
-        websiteCost = 400.00;
-    }
+        //Discount Codes
+        if (document.getElementById("discountCode").value == "LAUNCH50") {
+            websiteCost = 225.00;
+        } else {
+            websiteCost = 450.00;
+        }
+    
+        if (document.getElementById("discountCode").value == "LAUNCH25") {
+            websiteCost = 337.50;
+        } else {
+            websiteCost = 450.00;
+        }
+    
+        if (document.getElementById("discountCode").value == "CAUSEWAY") {
+            websiteCost = 360.00;
+            pageCost = 6.40;
+            contentCost = 48.00;
+            blogCost = 48.00;
+            analyticsCost = 20.00;
+            hostCost = 4.80;
+            domainFee = 8.00;
+            liveChatcost = 8.00;
+            ecommerceCost = 240.00;
+            ecommerceMonCost = 8.00;
+        } else {
+            websiteCost = 450.00;
+            pageCost = 8.00;
+            contentCost = 60.00;
+            blogCost = 60.00;
+            analyticsCost = 25.00;
+            hostCost = 6.00;
+            domainFee = 10.00;
+            liveChatcost = 10.00;
+            ecommerceCost = 300.00;
+            ecommerceMonCost = 12.00;
+        }
 
     pageRes = (pageCost * pageQty) + (1.5 * pageQty);
     contentRes = contentCost * contentQty;
@@ -129,13 +165,14 @@ function calculator() {
     domainRes = domainFee * domainQty;
     liveChatRes = liveChatcost * livechatQty;
     ecommerceRes = ecommerceCost * ecommerceQty;
+    ecommerceMonRes = ecommerceMonCost * ecommerceMonQty;
     creditRes = creditDisc * creditQty;
     
 
 
 
     initRes = websiteCost + pageRes + contentRes + blogRes + analyticsRes + hostRes + liveChatRes + ecommerceRes + domainRes - creditRes;
-    resMonthly = hostRes + mainRes;
+    resMonthly = hostRes + mainRes + ecommerceMonRes;
     resYearly = resMonthly * 12 - 12;
     deposit = initRes / 2;
 
