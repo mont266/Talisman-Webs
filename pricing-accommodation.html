@@ -74,8 +74,9 @@
   </div></div>
 </section>
 <div class="wrapper">
-  <h1>Full Website Pricing</h1>
-  <p>Pricing Calculator for a full front-end website.</p>
+  <h1>Accommodation Website Pricing</h1>
+  <p>Pricing Calculator for a accommodation service website.</p><br>
+  <p>Hotels | B&Bs | Appartments | Villas </p>
 </div> 
 <br>
 <br>
@@ -89,9 +90,9 @@
           <div class="form-group">
             <label for="websiteType" title="Website Type">Website/Service Type</label>
             <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
-              <option value="Select">Full Website</option>
+              <option value="Select">Accommodation Website</option>
+              <option value="pricing-landingpage.html">Full Website</option>
               <option value="pricing-landingpage.html">Landing Page</option>
-              <option value="pricing-accommodation.html">Accommodation Website</option>
               <option value="pricing-social.html">Social Media Page</option>
             </select>
           </div>
@@ -107,8 +108,17 @@
           </div>
           
           <div class="form-group">
-            <label for="websiteQuantity" title="How many web pages you want for your website">How Many Web Pages?</label>
+            <label for="websiteQuantity" title="How many rooms does your accommodation?">How Many Rooms?</label>
             <input class="form-control" type="text" name="txtPages" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+          </div>
+
+          <div class="form-group">
+            <label for="bookingCom" title="Do you want Booking.com Integration?">Booking.com Support?</label>
+            <select id="bookingCom" class="form-control" name="txtBookingCom">
+              <option value="Select">Select Option</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
           </div>
 
           <div class="form-group">
@@ -126,36 +136,8 @@
           </p>
 
           <div class="form-group">
-            <label for="websiteQuantity" title="Do you need us to create all of the images and content for the website?">Content Creation?</label>
-            <select id="contentCreation" class="form-control" name="txtContent">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-            <!--<input class="form-control" type="text" name="txtContent">-->
-          </div>
-
-          <div class="form-group">
             <label for="liveChat" title="Do you want a live chat on your website?">Live Chat Support?</label>
             <select id="liveChatSupport" class="form-control" name="txtLiveChat">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="ecommerce" title="Is your website going to be an online shop?">E-Commerce Integration?</label>
-            <select id="ecommerceSupport" class="form-control" name="txtEcommerce">
-              <option value="Select">Select Option</option>
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="websiteQuantity" title="Do you need a web blog on your website?">Blog?</label>
-            <select id="blogSupport" class="form-control" name="txtBlog">
               <option value="Select">Select Option</option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
@@ -213,7 +195,7 @@
             </div>
           <div class="form-group">
             <label>By pressing Submit, you acknowledge that this form collects data based on what you have entered in the above fields.</label><br>
-            <input class="btn btn-primary" type="Submit" value="Calculate" onclick="Check()">
+            <input class="btn btn-primary" type="Submit" value="Calculate" onclick="calculator()">
          </div>
         </form>
     </div>
@@ -341,7 +323,7 @@
         <script src='js/vendor/jquery.localscroll-min.js'></script>-->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/calculator.js"></script>
+        <script src="js/calculatorhotel.js"></script>
 
        <!--Start of Tawk.to Script-->
        <script type="text/javascript">
