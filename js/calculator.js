@@ -123,7 +123,6 @@ function calculator() {
         //Discount Codes
         if (document.getElementById("discountCode").value == "LAUNCH50") {
             websiteCost = 225.00;
-            Document.getElementById("savings").innerHTML = "Savings: £225"
         } else {
             websiteCost = 450.00;
         }
@@ -210,8 +209,9 @@ function calculator() {
 
 function Check() {
     if (document.getElementById("name").value == "") {
-        
+        document.getElementById("error").innerHTML = "Please Fill Out All Fields";
     } else {
+        document.getElementById("error").innerHTML = "";
         calculator();
     }
 }

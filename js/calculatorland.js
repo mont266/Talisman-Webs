@@ -70,15 +70,6 @@ function calculator() {
         creditQty = 0;
     }
 
-    //Discount Codes
-    if (document.getElementById("discountCode").value == "LANDING100") {
-        websiteCost = 50.00;
-        document.getElementById("savings").innerHTML = "Savings: £100";
-    } else {
-        websiteCost = 150;
-        document.getElementById("savings").innerHTML = "Savings: £0";
-    }
-
     analyticsRes = analyticsCost * analyticsQty;
     hostRes = hostCost * hostQty;
     domainRes = domainFee * domainQty;
@@ -96,4 +87,13 @@ function calculator() {
     document.getElementById("deposit").innerHTML = "Deposit: £ " + deposit;
     document.getElementById("ref").innerHTML = "Quote Reference: " + Date.now();
     document.getElementById("help").innerHTML = "If you are happy with your quote, Speak to us here!";
+}
+
+function Check() {
+    if (document.getElementById("name").value == "") {
+        document.getElementById("error").innerHTML = "Please Fill Out All Fields";
+    } else {
+        document.getElementById("error").innerHTML = "";
+        calculator();
+    }
 }

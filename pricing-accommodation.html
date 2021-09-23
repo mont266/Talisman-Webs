@@ -86,7 +86,7 @@
       <div class="col-sm-12">
       </div>
       <div id="calcu" class="calc">
-        <form name="pricingcalc" netlify-honeypot="bot-field" data-netlify="true" action="#middle">
+        <form name="calchotel" netlify-honeypot="bot-field" data-netlify="true" action="#middle">
           <div class="form-group">
             <label for="websiteType" title="Website Type">Website/Service Type</label>
             <select onChange="window.location.href=this.value" id="websiteType" class="form-control" name="txtType">
@@ -191,11 +191,12 @@
             <label id="resYearly"></label><br>
             <label id="deposit"></label><br>
             <label id="ref"></label><br>
+            <p id="error"></p>
             
             </div>
           <div class="form-group">
             <label>By pressing Submit, you acknowledge that this form collects data based on what you have entered in the above fields.</label><br>
-            <input class="btn btn-primary" type="Submit" value="Calculate" onclick="calculator()">
+            <input class="btn btn-primary" type="Submit" value="Calculate" onclick="Check()">
          </div>
         </form>
     </div>

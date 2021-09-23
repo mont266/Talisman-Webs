@@ -1,7 +1,7 @@
 function calculator() {
 
     var facebookCost = 25.00;
-    var twitterCost = 20.00;
+    var twitterCost = 25.00;
 
     var facebookQty;
     var twitterQty;
@@ -32,15 +32,6 @@ function calculator() {
     }
     else {
         multi = 0.00;
-    }
-
-    //Discount Codes
-    if (document.getElementById("discountCode").value == "HDJHFJKSKJ") {
-        facebookCost = 25.00;
-        document.getElementById("savings").innerHTML = "Savings: £0";
-    } else {
-        facebookCost = 25.00;
-        document.getElementById("savings").innerHTML = "";
     }
 
     facebookRes = facebookCost * facebookQty;

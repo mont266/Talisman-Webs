@@ -1,6 +1,7 @@
 function calculator() {
 
-    var websiteCost = 801.25;
+    var websiteCostS = 800.00;
+    var websiteCost = 800.00;
     var analyticsCost = 25.00;
     var hostCost = 6.00;
     var domainFee = 10.00;
@@ -33,7 +34,7 @@ function calculator() {
     var resYearly;
     var deposit;
 
-    roomQty = (document.pricingcalc.txtPages.value);
+    roomQty = (document.calchotel.txtPages.value);
 
     //Analytics
     if (document.getElementById("analyticsSupport").value == "Yes") {
@@ -92,28 +93,30 @@ function calculator() {
         creditQty = 0;
     }
 
+
+
         //Discount Codes
         if (document.getElementById("discountCode").value == "LAUNCH50") {
             websiteCost = 250.00;
         } else {
-            websiteCost = 800.00;
+            websiteCost = websiteCostS;
         }
     
         if (document.getElementById("discountCode").value == "LAUNCH25") {
             websiteCost = 375.00;
         } else {
-            websiteCost = 800.00;
+            websiteCost = websiteCostS;
         }
     
         if (document.getElementById("discountCode").value == "CAUSEWAY") {
-            websiteCost = 360.00;
+            websiteCost = 640.00;
             pageCost = 6.40;
             analyticsCost = 20.00;
             hostCost = 4.80;
             domainFee = 8.00;
             liveChatcost = 8.00;
         } else {
-            websiteCost = 800.00;
+            websiteCost = websiteCostS;
             pageCost = 8.00;
             analyticsCost = 25.00;
             hostCost = 6.00;
@@ -122,14 +125,14 @@ function calculator() {
         }
 
         if (document.getElementById("discountCode").value == "Ref") {
-            websiteCost = 382.50;
+            websiteCost = 680.00;
             pageCost = 6.80;
             analyticsCost = 21.25;
             hostCost = 5.10;
             domainFee = 8.50;
             liveChatcost = 8.50;
         } else {
-            websiteCost = 800.00;
+            websiteCost = websiteCostS;
             pageCost = 8.00;
             analyticsCost = 25.00;
             hostCost = 6.00;
@@ -205,9 +208,6 @@ function calculator() {
     domainRes = domainFee * domainQty;
     liveChatRes = liveChatcost * livechatQty;
     creditRes = creditDisc * creditQty;
-    
-
-
 
     initRes = websiteCost + roomRes + analyticsRes + hostRes + liveChatRes + domainRes - creditRes;
     resMonthly = hostRes + mainRes + roomRes;
@@ -218,4 +218,13 @@ function calculator() {
     document.getElementById("resMonthly").innerHTML = "£" + resMonthly + " Per Month" + " (£ " + resYearly + " Yearly)";
     document.getElementById("deposit").innerHTML = "Deposit: £ " + deposit;
     document.getElementById("ref").innerHTML = "Quote Reference: " + Date.now();
+}
+
+function Check() {
+    if (document.getElementById("name").value == "") {
+        document.getElementById("error").innerHTML = "Please Fill Out All Fields";
+    } else {
+        document.getElementById("error").innerHTML = "";
+        calculator();
+    }
 }
