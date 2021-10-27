@@ -159,18 +159,21 @@ function calculate2() {
     var mainLow = 5.00;
     var mainMed = 10.00;
     var mainHigh = 15.00;
+    var cmsCost = 40.00;
 
     var analyticsQty;
     var hostQty;
     var domainQty;
     var livechatQty;
     var creditQty;
+    var cmsQty;
 
     var analyticsRes;
     var hostRes;
     var domainRes;
     var liveChatRes;
     var creditRes;
+    var cmsRes;
     var mainRes;
 
     var initRes;
@@ -214,6 +217,12 @@ function calculate2() {
         hostQty = 0;
     }
 
+    if (document.getElementById("cmsSupport").value == "Yes") {
+        cmsQty = 1;
+    } else {
+        cmsQty = 0;
+    }
+
     if (document.getElementById("creditSupport").value == "Yes") {
         creditQty = 1;
     } else {
@@ -224,10 +233,11 @@ function calculate2() {
     hostRes = hostCost * hostQty;
     domainRes = domainFee * domainQty;
     liveChatRes = liveChatcost * livechatQty;
+    cmsRes = cmsCost * cmsQty;
     creditRes = creditDisc * creditQty;
     
 
-    initRes = websiteCost + analyticsRes + hostRes + liveChatRes + domainRes - creditRes;
+    initRes = websiteCost + analyticsRes + hostRes + cmsRes + liveChatRes + domainRes - creditRes;
     resMonthly = hostRes + mainRes;
     resYearly = resMonthly * 12 - 12;
     deposit = initRes / 2;
