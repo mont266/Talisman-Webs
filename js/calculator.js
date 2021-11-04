@@ -478,7 +478,7 @@ function calculate4() {
 }
 
 function Check1() {
-    if (document.getElementById("name").value == "") {
+    if (document.getElementById("email").value == "") {
         document.getElementById("error").innerHTML = "Please Fill Out All Fields";
     } else {
         document.getElementById("error").innerHTML = "";
@@ -487,7 +487,7 @@ function Check1() {
 }
 
 function Check2() {
-    if (document.getElementById("name").value == "") {
+    if (document.getElementById("email").value == "") {
         document.getElementById("error").innerHTML = "Please Fill Out All Fields";
     } else {
         document.getElementById("error").innerHTML = "";
@@ -496,7 +496,7 @@ function Check2() {
 }
 
 function Check3() {
-    if (document.getElementById("name").value == "") {
+    if (document.getElementById("email").value == "") {
         document.getElementById("error").innerHTML = "Please Fill Out All Fields";
     } else {
         document.getElementById("error").innerHTML = "";
