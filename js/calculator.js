@@ -1,7 +1,7 @@
 //Full Website
 function calculate1() {
 
-    var websiteCost = 450.0;
+    var websiteCost = 250.0;
     var pageCost = 8.00;
     var contentCost = 60.00;
     var blogCost = 60.00;
@@ -12,8 +12,8 @@ function calculate1() {
     var ecommerceCost = 300.00;
     var ecommerceMonCost = 12.00;
     var creditDisc = 10.00;
-    var mainLow = 10.00;
-    var mainMed = 15.00;
+    var mainLow = 6.00;
+    var mainMed = 12.00;
     var mainHigh = 25.00;
 
     var pageQty;
@@ -150,15 +150,15 @@ function calculate1() {
 //Landing Page
 function calculate2() {
 
-    var websiteCost = 250.0;
+    var websiteCost = 150.0;
     var analyticsCost = 25.00;
     var hostCost = 6.00;
     var domainFee = 10.00;
     var liveChatcost = 10.00;
     var creditDisc = 10.00;
-    var mainLow = 5.00;
-    var mainMed = 10.00;
-    var mainHigh = 15.00;
+    var mainLow = 6.00;
+    var mainMed = 12.00;
+    var mainHigh = 25.00;
     var cmsCost = 40.00;
 
     var analyticsQty;
@@ -259,8 +259,8 @@ function calculate3() {
     var domainFee = 10.00;
     var liveChatcost = 10.00;
     var creditDisc = 10.00;
-    var mainLow = 10.00;
-    var mainMed = 15.00;
+    var mainLow = 6.00;
+    var mainMed = 12.00;
     var mainHigh = 25.00;
 
     var pro = false;
@@ -478,7 +478,7 @@ function calculate4() {
 }
 
 function Check1() {
-    if (document.getElementById("name").value == "") {
+    if (document.getElementById("email").value == "") {
         document.getElementById("error").innerHTML = "Please Fill Out All Fields";
     } else {
         document.getElementById("error").innerHTML = "";
@@ -487,7 +487,7 @@ function Check1() {
 }
 
 function Check2() {
-    if (document.getElementById("name").value == "") {
+    if (document.getElementById("email").value == "") {
         document.getElementById("error").innerHTML = "Please Fill Out All Fields";
     } else {
         document.getElementById("error").innerHTML = "";
@@ -496,7 +496,7 @@ function Check2() {
 }
 
 function Check3() {
-    if (document.getElementById("name").value == "") {
+    if (document.getElementById("email").value == "") {
         document.getElementById("error").innerHTML = "Please Fill Out All Fields";
     } else {
         document.getElementById("error").innerHTML = "";

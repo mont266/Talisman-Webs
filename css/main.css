@@ -1224,7 +1224,7 @@ content: '\e841';
 .horizontal_slider_item > h4 > a:hover {color:#ff6f6f;}
 
 .portfolio_item_image, .horizontal_slider_introimg {position: relative; overflow: hidden;}
-.portfolio_item_image:hover, .horizontal_slider_introimg:hover {background-color: rgba(253, 112, 112, 0.9);}
+/* .portfolio_item_image:hover, .horizontal_slider_introimg:hover {background-color: rgba(253, 112, 112, 0.9);} */
 .portfolio_item_image > div:first-child {position: absolute;display: block; height: 100%;top:0; bottom:0; left: 0; right: 0; background-color: #111; background-color: rgba(0, 0, 0,0.8);
 }
 
@@ -1267,9 +1267,9 @@ background: #fff;
 -ms-transition: 0.3s all ease-in-out; 
 transition: 0.3s all ease-in-out;  
  }
-.isotope-item:hover .portfolio_item_image:after {
+/* .isotope-item:hover .portfolio_item_image:after {
 top:100px;
-} 
+}  */
 .p-link {
     margin-left: 70px;
 }
@@ -1307,7 +1307,7 @@ top:100px;
     width: 100%;
 }
 
-.horizontal_slider_item:hover img, .isotope-item:hover img {opacity: 0.2;
+.horizontal_slider_item:hover img, .isotope-item:hover img {
     -moz-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
