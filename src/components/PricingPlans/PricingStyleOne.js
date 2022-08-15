@@ -51,8 +51,8 @@ const PricingStyleOne = () => {
                                 <div className="price"> </div>
                                 
                                 <div className="pricing-footer">
-                                    <Link to="/login" className="btn btn-primary">
-                                        Select Plan
+                                    <Link to="/contact" className="btn btn-primary">
+                                        Get In Touch
                                     </Link>
                                 </div>
                             </div>
@@ -91,8 +91,8 @@ const PricingStyleOne = () => {
                                 <div className="price"> </div>
                                 
                                 <div className="pricing-footer">
-                                    <Link to="/login" className="btn btn-primary">
-                                        Select Plan
+                                    <Link to="/contact" className="btn btn-primary">
+                                        Get In Touch
                                     </Link>
                                 </div>
                             </div>
@@ -115,8 +115,8 @@ const PricingStyleOne = () => {
                                 </div>
                                 
                                 <div className="pricing-footer">
-                                    <Link to="/login" className="btn btn-primary">
-                                        Select Plan
+                                    <Link to="/contact" className="btn btn-primary">
+                                        Get In Touch
                                     </Link>
                                 </div>
                             </div>
