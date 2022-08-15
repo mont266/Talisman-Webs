@@ -41,7 +41,7 @@ const ComingSoon = () => {
 					<div className="container">
 						<div className="coming-soon-content">
                             <h1>Purchase Successful!</h1>
-                            <p>Thanks for purchasing an SEO audit with us today! We aim to have your audit completed and delivered to you via email within 24-48 hours.</p><br/>
+                            <p>Thanks for purchasing an SEO audit with us today! We aim to have your audit completed and delivered to you via email within 24-48 hours but please give up to 1 week during busy periods.</p><br/>
                             <p>Whilst we have you here, Please feel free to sign up to our newsletter for occasional emails on how to get the most out of your website. (We don't spam)</p>
                             <Purchasesignup />
 						</div>
