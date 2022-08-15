@@ -8,8 +8,8 @@ if (process.env.NODE_ENV === 'production' || !process.env.NODE_ENV) {
 
 module.exports = {
     siteMetadata: {
-        title: `Talisman Webs - Digital Journeys Start Here`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+        title: `Talisman Webs - Digital presence starts here.`,
+        description: `Your digital presence starts here. We build stunning websites at affordable prices to help kickstart the digital presence of small businesses in the UK.`,
         author: `@envy_theme`,
     },
     plugins: [

@@ -26,7 +26,7 @@ class PricingStyleThree extends Component {
                 <div className="container">
                     <div className="section-title st-fs-28">
                         <span className="sub-title">Add-Ons</span>
-                        <h2>Maintanence Packages</h2>
+                        <h2>Maintenance Packages</h2>
                         <div className="bar"></div>
                         <p>These are optional extras that can be added onto your website packages. These are added to the monthly/yearly charge of the live website.</p>
                         <p>__</p>
@@ -53,8 +53,8 @@ class PricingStyleThree extends Component {
                                     <div className="col-lg-4 col-md-6 col-sm-6">
                                         <div className="pricing-box">
                                             <div className="pricing-header">
-                                                <h3>Low Maintanence Package</h3>
-                                                <p>For low maintanence websites. <br /> Mostly landing pages.</p>
+                                                <h3>Low maintenance Package</h3>
+                                                <p>For low Maintenance websites. <br /> Mostly landing pages.</p>
                                             </div>
 
                                             <div className="price">
@@ -79,7 +79,7 @@ class PricingStyleThree extends Component {
                                     <div className="col-lg-4 col-md-6 col-sm-6">
                                         <div className="pricing-box">
                                             <div className="pricing-header">
-                                                <h3>Medium Maintanence Package</h3>
+                                                <h3>Medium Maintenance Package</h3>
                                                 <p>For websites that will need weekly attention. <br /> High traffic landing pages.</p>
                                             </div>
 
@@ -105,7 +105,7 @@ class PricingStyleThree extends Component {
                                     <div className="col-lg-4 col-md-6 col-sm-6">
                                         <div className="pricing-box">
                                             <div className="pricing-header">
-                                                <h3>High Maintanence Package</h3>
+                                                <h3>High Maintenance Package</h3>
                                                 <p>For popular websites that need daily updates. <br /> Mostly popular E-Commerce shops. </p>
                                             </div>
 
@@ -135,8 +135,8 @@ class PricingStyleThree extends Component {
                                     <div className="col-lg-4 col-md-6 col-sm-6">
                                         <div className="pricing-box">
                                             <div className="pricing-header">
-                                                <h3>Low Maintanence Package</h3>
-                                                <p>For low maintanence websites. <br /> Mostly landing pages.</p>
+                                                <h3>Low Maintenance Package</h3>
+                                                <p>For low maintenance websites. <br /> Mostly landing pages.</p>
                                             </div>
 
                                             <div className="price">
@@ -161,7 +161,7 @@ class PricingStyleThree extends Component {
                                     <div className="col-lg-4 col-md-6 col-sm-6">
                                         <div className="pricing-box">
                                             <div className="pricing-header">
-                                                <h3>Medium Maintanence Package</h3>
+                                                <h3>Medium Maintenance Package</h3>
                                                 <p>For websites that will need weekly attention. <br /> High traffic landing pages.</p>
                                             </div>
 
@@ -187,7 +187,7 @@ class PricingStyleThree extends Component {
                                     <div className="col-lg-4 col-md-6 col-sm-6">
                                         <div className="pricing-box">
                                             <div className="pricing-header">
-                                                <h3>High Maintanence Package</h3>
+                                                <h3>High Maintenance Package</h3>
                                                 <p>For popular websites that need daily updates. <br /> Mostly popular E-Commerce shops. </p>
                                             </div>
 
