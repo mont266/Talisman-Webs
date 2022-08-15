@@ -20,6 +20,7 @@ const ContactForm = () => {
                     <div className="col-lg-6 col-md-12">
                         <form id="contactForm" method="POST" netlify-honeypot="bot-field" data-netlify="true" name="Contact Us">
                             <input type="hidden" name="bot-field" />
+                            <input type="hidden" name="form-name" value="Contact Us" />
                             <div className="row">
                                 <div className="col-lg-12 col-md-12">
                                     <div className="form-group">
