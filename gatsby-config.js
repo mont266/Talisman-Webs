@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'production' || !process.env.NODE_ENV) {
 
 module.exports = {
     siteMetadata: {
-        title: `Talisman Webs - Digital presence starts here.`,
+        title: `Talisman Webs -- Digital presence starts here.`,
         description: `Your digital presence starts here. We build stunning websites at affordable prices to help kickstart the digital presence of small businesses in the UK.`,
         author: `@envy_theme`,
     },

@@ -13,7 +13,7 @@ import { Link } from "gatsby";
 
 const About2 = () => (
     <Layout>
-        <SEO title="About Us Page 2" /> 
+        <SEO title="About Us" /> 
 
         <Navbar />
 
