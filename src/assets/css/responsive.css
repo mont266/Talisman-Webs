@@ -1657,9 +1657,13 @@
     display: none;
   }
   .startp-nav nav .others-option .btn.btn-light, .startp-nav nav .others-option .btn {
+    visibility: hidden;
     padding: 6px 12px;
     margin-right: 5px;
     font-size: 10px;
+  }
+  .image_hide {
+    visibility: hidden;
   }
   .startp-nav nav .others-option .cart-wrapper-btn {
     margin-right: 25px;

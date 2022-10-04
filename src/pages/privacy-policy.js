@@ -22,7 +22,7 @@ const ProjectDetails = () => (
 
         <h1>Privacy Policy for Talisman Webs</h1>
 
-<p>At Talisman Webs, accessible from http://www.talismanwebs.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Talisman Webs and how we use it.</p>
+<p>At Talisman Webs, accessible from http://www.talismanwebs.co.uk, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Talisman Webs and how we use it.</p>
 
 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
 

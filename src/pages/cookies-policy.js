@@ -20,7 +20,7 @@ const ProjectDetails = () => (
                     <div className="col-lg-12 col-md-12">
                         <div className="project-details-desc">
 <h1>Cookie Policy for Talisman Webs</h1>
-<p>This is the Cookie Policy for Talisman Webs, accessible from http://www.talismanwebs.com</p>
+<p>This is the Cookie Policy for Talisman Webs, accessible from http://www.talismanwebs.co.uk</p>
 <p><strong>What Are Cookies</strong></p>
 <p>As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.</p>
 <p><strong>How We Use Cookies</strong></p>
@@ -47,7 +47,7 @@ const ProjectDetails = () => (
 <p>For more general information on cookies, please read <a href="https://www.cookiepolicygenerator.com/sample-cookies-policy/">the Cookies Policy article</a>.</p>
 <p>However if you are still looking for more information then you can contact us through one of our preferred contact methods:</p>
 <ul>
-<li>By visiting this link: http://www.talismanwebs.com/index.html#contact</li>
+<li>By visiting this link: http://www.talismanwebs.co.uk/contact</li>
 </ul>
 <p>Generated using <a href="https://www.cookiepolicygenerator.com">Cookies Policy Generator</a></p>
 

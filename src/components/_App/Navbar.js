@@ -3,6 +3,8 @@ import {Link} from 'gatsby';
 import * as Icon from 'react-feather';
 
 import Logo from "../../assets/images/logo.png"
+import USflag from "../../assets/images/US-Flag.png";
+
 
 const Navbar = () => {
     const [menu, setMenu] = React.useState(true)
@@ -51,6 +53,14 @@ const Navbar = () => {
 
                         <div className={classOne} id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto">
+
+                                <li className="nav-item">
+                                    <Link to="https://www.talismanwebs.com" className="nav-link">
+                                        <img src={USflag} className="image_hide" height="25%" width="25%" alt="US Flag" /><br />
+                                        US Site
+                                    </Link>
+                                </li>
+
                                 <li className="nav-item">
                                     <Link to="/" activeClassName="active" onClick={toggleNavbar} className="nav-link">
                                         Home
@@ -92,6 +102,8 @@ const Navbar = () => {
                             <Link to="/contact" className="btn btn-primary">
 							    Get Started
                             </Link>
+
+                            
 						</div>
                     </nav>
                 </div>
