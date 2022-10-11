@@ -262,7 +262,7 @@ const ServicesArea = () => {
                                 <div className="bar"></div>
                                 <p>Our SEO audits offer extreme detail and will identify the current strengths and weaknesses of your current SEO strategy.</p>
                             </div>
-                            <Link to="#" className="btn btn-primary">
+                            <Link to="../pricing" className="btn btn-primary">
                                     Buy Now
                                 </Link>
 
