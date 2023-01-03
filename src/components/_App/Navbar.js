@@ -55,13 +55,6 @@ const Navbar = () => {
                             <ul className="navbar-nav ms-auto">
 
                                 <li className="nav-item">
-                                    <Link to="https://www.talismanwebs.com" className="nav-link">
-                                        <img src={USflag} className="image_hide" height="25%" width="25%" alt="US Flag" /><br />
-                                        US Site
-                                    </Link>
-                                </li>
-
-                                <li className="nav-item">
                                     <Link to="/" activeClassName="active" onClick={toggleNavbar} className="nav-link">
                                         Home
                                     </Link>
